@@ -6,12 +6,11 @@ import LeftArrow from '../../public/leftArrow';
 
   function ExperimentTemplate({ experiment }) {
     const navigate = useNavigate()
-    return (
-      <>
-        <Header />
-        <div className="max-w-[1280px] h-full flex flex-col items-center p-10 bg-gray-100 mt-10">
+    return ( 
+        <div className="max-w-[1280px] min-h-screen flex flex-col items-center bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% mt-16 mb-16">
+        <Header />  
           {/* Back button */} 
-          <div className='w-full mb-4'> 
+          <div className='w-10/12 mb-4 mt-10'> 
             <button onClick={() => navigate(-1)} className="flex items-center"> 
               <div className='w-10 h-10 rounded-full bg-green-700 flex items-center justify-center'>
               <LeftArrow  />
@@ -20,7 +19,7 @@ import LeftArrow from '../../public/leftArrow';
           </div>
           {/* Title */}
           <div className="w-full max-w-2xl mb-8">
-            <h2 className="text-3xl font-bold mb-4">{experiment.title}</h2>
+            <h2 className="text-3xl text-white font-bold mb-4">{experiment.title}</h2>
             <video controls className="w-full rounded shadow-lg">
               <source src={experiment.videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
@@ -49,9 +48,8 @@ import LeftArrow from '../../public/leftArrow';
             <h3 className="text-2xl font-semibold mb-4">Result</h3>
             <p>{experiment.result}</p>
           </div>
-        </div>
         <Footer />
-      </>
+        </div>
     );
 }
 

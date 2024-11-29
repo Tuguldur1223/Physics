@@ -24,18 +24,20 @@ const experiments = [
 ];
 function ExperimentList({Grade, Subject}) {
   return (
-    <>
-      <Header />
-      <div className="w-[1280px] h-full flex flex-col items-center p-10 bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% mt-10">
-        <h2 className="text-3xl font-bold mb-8 text-white">Available Experiments of Grade {Grade}</h2>
+    
+      
+      <div className="w-[1280px] h-full flex flex-col items-center bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% mt-16 mb-16  ">
+        <Header />
+        <h2 className="text-3xl font-bold mb-8 text-white mt-10">Available Experiments of Grade {Grade}</h2>
         {
           experiments
             .filter(data => data.grade === Grade && data.subject === Subject)
             .map(data => <ExperimentInfo key={data.id} id={data.id} title={data.title} description={data.description} path={data.path} />)
         }
+        <Footer />
       </div>
-      <Footer />
-    </>
+      
+  
   );
 }
 

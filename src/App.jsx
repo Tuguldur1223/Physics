@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import ExperimentList from './Pages/ExperimentList';
 import ExperimentTemplate from './Pages/ExperimentTemplate';
-import AboutUs from './Pages/AboutUs';
+import About from './Pages/AboutUs';
 
 // Define pendulumExperiment object here as well
 const pendulumExperiment = {
@@ -46,7 +46,7 @@ function App() {
         <Route path="/Chemistry11" element={<ExperimentList Grade={11} Subject={"Chemistry"} />} />
         <Route path="/Chemistry12" element={<ExperimentList Grade={12} Subject={"Chemistry"} />} />
         <Route path="/chemistry/experiment/pendulum" element={<ExperimentTemplate experiment={pendulumExperiment} />} />
-        <Route path='/AboutUs' element={<AboutUs />}/>
+        <Route path='/AboutUs' element={<About />}/>
       </Routes>
     </Router>
   );
