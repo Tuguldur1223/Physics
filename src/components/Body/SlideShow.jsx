@@ -6,26 +6,26 @@ import Play from '../../../public/Play'
 const slides = [
   {
     id: 1,
-    title: 'Lorem ipsum : dolor sit amet, consectetur adipiscing elit.',
-    content: 'today / 09:13',
+    title: 'Robotek туршилтын үйл явц - Эмма Ундрах',
+    content: '1 жилийн өмнө / 09:10',
     imageUrl: '../../../public/Slide1.png', // Placeholder image
   },
   {
     id: 2,
-    title: 'Lorem ipsum : dolor sit amet, consectetur adipiscing elit.',
-    content: 'today / 09:13',
+    title: 'Robotek туршилтын үйл явц - Сараа Батука',
+    content: '1 жилийн өмнө / 10:20',
     imageUrl: '../../../public/Slide2.png', // Placeholder image
   },
   {
     id: 3,
-    title: 'Lorem ipsum : dolor sit amet, consectetur adipiscing elit.',
-    content: 'today / 09:13',
+    title: 'Robotek туршилтын үйл явц - Учрал Энэрэл',
+    content: '1 жилийн өмнө / 11:30',
     imageUrl: '../../../public/Slide3.png', // Placeholder image
   },
   {
     id: 3,
-    title: 'Lorem ipsum : dolor sit amet, consectetur adipiscing elit.',
-    content: 'today / 09:13',
+    title: 'Robotek туршилтын үйл явц - Төгөлдөр Болор Сүбэдэй',
+    content: '1 жилийн өмнө / 12:40',
     imageUrl: '../../../public/Slide4.png', // Placeholder image
   },
 ];

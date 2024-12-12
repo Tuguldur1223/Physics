@@ -20,33 +20,12 @@ import LeftArrow from '../../public/leftArrow';
           {/* Title */}
           <div className="w-full max-w-2xl mb-8">
             <h2 className="text-3xl text-white font-bold mb-4">{experiment.title}</h2>
-            <video controls className="w-full rounded shadow-lg">
-              <source src={experiment.videoSrc} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe width="1080" height="608" src={props.Url} title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className='mt-8 '></iframe>
           </div>
           {/* What you need */}
           <div className="w-full max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Хэрэглэгдэхүүн</h3>
-            <ul className="list-disc list-inside">
-              {experiment.materials.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          {/* How to do it */}
-          <div className="w-full max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Алхам</h3>
-            <ol className="list-decimal list-inside">
-              {experiment.steps.map((step, index) => (
-                <li key={index}>{step}</li>
-              ))}
-            </ol>
-          </div>
-          {/* Result */}
-          <div className="w-full max-w-2xl bg-white p-6 rounded shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Үр дүн</h3>
-            <p>{experiment.result}</p>
+            
           </div>
         <Footer />
         </div>

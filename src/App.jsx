@@ -4,7 +4,8 @@ import Home from './Pages/Home';
 import ExperimentList from './Pages/ExperimentList';
 import ExperimentTemplate from './Pages/ExperimentTemplate';
 import About from './Pages/AboutUs';
-
+import EYSHlist from './Pages/EYSHlist';
+import EYSHtemplate from './Pages/EYSHtemplate';
 // Define pendulumExperiment object here as well
 const pendulumExperiment = {
   title: 'Physics Experiment: The Pendulum',
@@ -24,6 +25,12 @@ const pendulumExperiment = {
   ],
   result: 'You should observe that the time it takes for the pendulum to complete one swing, known as the period, depends on the length of the string. The longer the string, the longer the period.'
 };
+const TogtmolGuidel = {
+  title: 'Тогтмол гүйдэл (Цахилгаан хэлхээ)',
+  videoSrc: 'https://www.youtube.com/embed/P5dw1abNQ5k?si=glvZWPDd_TcBz7vX',
+  description: 'Learn about pendulum and periodic motion.'
+}
+
 
 function App() {
   return (
@@ -36,8 +43,9 @@ function App() {
         <Route path="/Physic9" element={<ExperimentList Grade={9} Subject={"Physics"} />} />
         <Route path="/Physic10" element={<ExperimentList Grade={10} Subject={"Physics"} />} />
         <Route path="/Physic11" element={<ExperimentList Grade={11} Subject={"Physics"} />} />
-        <Route path="/Physic12" element={<ExperimentList Grade={12} Subject={"Physics"} />} />
         <Route path="/physics/experiment/pendulum" element={<ExperimentTemplate experiment={pendulumExperiment} />} />
+        <Route path="/EYSH_beltgel" element={<EYSHlist />} />
+        <Route path="/EYSH_beltgel/Togtmol_Guidel" element={<EYSHtemplate experiment={TogtmolGuidel} />} />
         <Route path="/Chemistry6" element={<ExperimentList Grade={6} Subject={"Chemistry"} />} />
         <Route path="/Chemistry7" element={<ExperimentList Grade={7} Subject={"Chemistry"} />} />
         <Route path="/Chemistry8" element={<ExperimentList Grade={8} Subject={"Chemistry"} />} />

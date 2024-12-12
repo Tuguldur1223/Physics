@@ -8,7 +8,7 @@ function Footer(){
                 <Link to="/">
                     <div className='text-white flex flex-col justify-center items-center'>
                     <h1 className='text-3xl'>Amjilt</h1>
-                    <p className='text-[10px]'>Physics and Chemistry tests</p>
+                    <p className='text-[10px]'>Physics & Chemistry tests</p>
                     </div>
                 </Link>
             </div>
