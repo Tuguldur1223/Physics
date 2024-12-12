@@ -45,7 +45,7 @@ function App() {
         <Route path="/Physic11" element={<ExperimentList Grade={11} Subject={"Physics"} />} />
         <Route path="/physics/experiment/pendulum" element={<ExperimentTemplate experiment={pendulumExperiment} />} />
         <Route path="/EYSH_beltgel" element={<EYSHlist />} />
-        <Route path="/EYSH_beltgel/Togtmol_Guidel" element={<EYSHtemplate experiment={TogtmolGuidel} />} />
+        <Route path="/EYSH_beltgel/Togtmol_Guidel" element={<EYSHtemplate bodlogo={TogtmolGuidel} />} />
         <Route path="/Chemistry6" element={<ExperimentList Grade={6} Subject={"Chemistry"} />} />
         <Route path="/Chemistry7" element={<ExperimentList Grade={7} Subject={"Chemistry"} />} />
         <Route path="/Chemistry8" element={<ExperimentList Grade={8} Subject={"Chemistry"} />} />
