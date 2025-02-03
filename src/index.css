@@ -4,8 +4,9 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(135deg, #002C29, #212626, #2A252C, black)
+  background-image: linear-gradient(135deg, #002C29, #212626, #2A252C, black);
+
+  padding: 50px;
+  max-width: 100%;
+  min-height: 100vh;
 }

@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 function AboutUs() {
 
   return (
-      <div className='bg-black mt-16 mb-16 w-[1280px] min-h-screen text-white bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% flex flex-col items-center'>
+      <div className='bg-black w-full min-h-screen text-white bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% flex flex-col items-center'>
         <Header />
         <h1 className='text-3xl font-bold mt-20 text-green-700'>ABOUT US</h1>
         <p className='text-xl font-semibold w-3/5 mt-8'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quibusdam, 
