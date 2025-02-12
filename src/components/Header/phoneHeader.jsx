@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DropdownBtn from './DropdownBtn';
-import Search from '../../../public/search';
+
 function PhoneHeader() {
     return (
         <div className='w-full h-16 flex sm:hidden top-0 left-0 z-50'>
@@ -16,11 +15,15 @@ function PhoneHeader() {
                 </div>
 
                 <div className="w-5/12 gap-8 flex justify-center items-center relative z-10">
-                    <Search />
-                    <img src="../../../public/bookmark.svg" alt="bookmark"/>
-                    <div className='w-7 h-7 rounded-full bg-violet-800 flex justify-center items-center'>
-                        <h1 className='text-2xl'>B</h1>
-                    </div>
+                    <Link to="/search">
+                        <img src="../../../public/search.svg" alt="search"/>
+                    </Link>
+                    <Link to="/home/favourite">
+                        <img src="../../../public/bookmark.svg" alt="bookmark"/>
+                    </Link>
+                    <Link to="/login">
+                    <img src="../../../public/profile.svg" alt="profile" className='scale-125' />
+                    </Link>
                 </div>
             </div>
         </div>

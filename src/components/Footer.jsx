@@ -13,7 +13,7 @@ function Footer(){
                 </Link>
             </div>
             <div className="w-9/12 flex flex-row justify-between items-center text-white ">
-                <Link to="/AboutUs">
+                <Link to="/aboutUs">
                 <button className="h-8 min-w-20 border-none rounded-3xl  font-medium flex justify-center items-center gap-1 p-2">Бидний тухай</button>
                 </Link>
                 <button className="h-8 min-w-20 border-none rounded-3xl  font-medium flex justify-center items-center gap-1 p-2">Сурталчилгаа байршуулах</button>

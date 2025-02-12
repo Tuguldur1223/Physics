@@ -12,7 +12,10 @@ import Physics from './Pages/Physics';
 import Market from './Pages/Market'
 import Chemistry from './Pages/Chemistry'
 import ItemTemplate from './Pages/ItemTemplate';
-import PhoneHeader from './components/Header/phoneHeader'
+import Search from './Pages/Search';
+import Favourite from './Pages/Favourite';
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
 
 import {experiments} from './Datas/Experiments'
 import {items} from './Datas/Items'
@@ -21,7 +24,7 @@ import {chemistry} from './Datas/Chemistry'
 
 function App() {
   const isPhysicPage = location.pathname.includes('/physic/');
-
+  const isHomePage = location.pathname.includes('/home/');
   return (
     <Router>
       <Routes>
@@ -51,10 +54,14 @@ function App() {
         <Route path='/market/:name' element={<ItemTemplate items={items} />}/>
 
 
-        <Route path='/AboutUs' element={<About />}/>
+        <Route path='/aboutUs' element={<About />}/>
+        <Route path='/search' element={<Search />}/>
+        <Route path='/home/favourite' element={<Favourite />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/signup' element={<SignUp />}/>
       </Routes>
       
-      {!isPhysicPage && <PhoneNav />}
+      {!isPhysicPage && !isHomePage && <PhoneNav />}
       
     </Router>
   );

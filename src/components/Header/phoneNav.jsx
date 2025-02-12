@@ -7,11 +7,14 @@ import homeActive from '../../../public/homeActive.svg';
 import physicActive from '../../../public/physicActive.svg';
 import chemistryActive from '../../../public/chemistryActive.svg';
 import marketActive from '../../../public/marketActive.svg';
+import search from '../../../public/search.svg';
+import searchActive from '../../../public/searchActive.svg'
 import { Link, useLocation } from 'react-router-dom';
 function NavBar() {
   const location = useLocation();
   const tabs = [
     { name: "Home", icon: home, activeIcon: homeActive },
+    { name: "Search", icon: search, activeIcon: searchActive },
     { name: "Physic", icon: physic, activeIcon: physicActive },
     { name: "Chemistry", icon: chemistry, activeIcon: chemistryActive },
     { name: "Market", icon: market, activeIcon: marketActive },
@@ -23,14 +26,14 @@ function NavBar() {
   });
 
   const getTranslateValue = (index) => {
-    return `translateX(${index * 96}px)`; // 96px = 6rem = w-24
+    return `translateX(${index * 80}px)`; // 96px = 6rem = w-24
   };
 
   return (
     <div className="bg-[#08472B] sm:hidden h-20 w-full px-6 rounded-t-xl flex justify-center items-center fixed bottom-0 left-0 right-0 z-50 max-w-screen-xl mx-auto" style={{ marginBottom: 0 }}>
       <ul className="flex relative h-full">
         <span
-          className="bg-[#F5F3F4] h-16 w-16 absolute -top-7 rounded-full ml-4 -z-10"
+          className="bg-[#F5F3F4] h-16 w-16 absolute -top-7 rounded-full ml-2 -z-10"
           style={{
             transform: getTranslateValue(activeIndex),
             transition: 'transform 0.3s ease-in-out',
@@ -47,7 +50,7 @@ function NavBar() {
           ></span>
         </span>
         {tabs.map((tab, i) => (
-          <li key={i} className="w-24 h-full flex justify-center items-center">
+          <li key={i} className="w-20 h-full flex justify-center items-center">
             <Link
               to={`/${tab.name.toLowerCase()}`}
               className="flex flex-col text-center w-full h-full"
