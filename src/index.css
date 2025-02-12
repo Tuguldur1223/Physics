@@ -5,8 +5,17 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(135deg, #002C29, #212626, #2A252C, black);
-
-  padding: 50px;
-  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
   min-height: 100vh;
+}
+
+/* Add padding for screens larger than small breakpoint (sm) */
+@media (min-width: 640px) {
+  :root {
+    padding: 50px;
+  }
 }

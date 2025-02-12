@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import RigthArrow from '../../../public/rigthArow';
-import LeftArrow from '../../../public/leftArrow'
-import Bookmark from '../../../public/bookmark'
 import Play from '../../../public/Play'
 const slides = [
   {
@@ -43,37 +40,37 @@ function SlideShow() {
 
   return (
     
-      <div className="w-full flex flex-row justify-center items-center gap-8" >
+      <div className="w-full flex flex-row justify-center items-center sm:gap-8 gap-2" >
         <button 
-            className="bg-green-700 rounded-full px-4 py-3"
+            className="bg-[#08472B] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={prevSlide}
           >
-            <LeftArrow/>
+            <img src="../../../public/leftArrow.svg" alt="leftArrow" className='sm:scale-100 scale-75'/>
         </button>
-        <div className='w-10/12 h-[500px] flex flex-col justify-end items-start p-5' style={{
+        <div className='w-10/12 sm:h-[500px] h-[200px] flex flex-col justify-end items-start p-5' style={{
             backgroundImage: `url("${slides[currentSlide].imageUrl}")`,
             backgroundSize: 'cover', 
             backgroundPosition: 'center'
 
         }}>
-          <div className='flex gap-6'>
-            <button className='bg-black rounded-full w-10 h-10 flex justify-center items-center'>
+          <div className='flex sm:gap-6 gap-2'>
+            <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
             <Play/>
             </button>
-            <button className='bg-black rounded-full w-10 h-10 flex justify-center items-center'>
-            <Bookmark/>
+            <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
+            <img src="../../../public/bookmark.svg" alt="bookmark" className='scale-75 sm:scale-100'/>
             </button>
           </div>
-          <h2 className="text-[40px] font-bold text-white  w-2/3 text-left">{slides[currentSlide].title}</h2>
-          <p className="text-2xl font-medium text-gray-500 text-center ">{slides[currentSlide].content}</p>
+          <h2 className="sm:text-[40px] text-[10px] font-bold text-white  w-2/3 text-left">{slides[currentSlide].title}</h2>
+          <p className="sm:text-2xl text-[5px] font-medium text-gray-500 text-center ">{slides[currentSlide].content}</p>
         </div>
         
           
         <button 
-            className="bg-green-700 rounded-full px-4 py-3"
+            className="bg-[#08472B] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={nextSlide}
         >
-            <RigthArrow/>
+            <img src="../../../public/rightArrow.svg" alt="rightArrow" className='sm:scale-100 scale-75'/>
         </button>
         
       </div>

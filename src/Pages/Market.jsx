@@ -1,0 +1,34 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Card from '../components/Body/Card';
+import {items} from '../Datas/Items'
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer';
+import PhoneHeader from '../components/Header/phoneHeader'
+function Market() {
+  return (
+    <div className='w-full min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
+      <Header />
+      <PhoneHeader/>
+      <div className='p-4 grid grid-cols-2 sm:grid-cols-5 gap-4'>
+
+          {items.map(data =>(
+            <Card
+            key={data.id} 
+            id={data.id} 
+              title={data.title} 
+              description={data.description}
+              img={data.img}
+              price={data.price} 
+              path={`/market/${data.name}`} 
+              />
+            ))
+            
+          }
+      </div>
+      <Footer/>
+    </div>
+  )
+}
+
+export default Market;
