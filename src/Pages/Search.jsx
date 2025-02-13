@@ -50,7 +50,7 @@ function Search() {
        placeholder="Search..." 
        value={query} 
        onChange={handleSearchChange} 
-       className="search-input w-64 h-10 mt-10 text-white p-2 rounded-lg bg-[#021a09] border-2 border-solid border-green-700"
+       className="search-input w-9/12 h-10 mt-10 text-white p-2 rounded-lg bg-[#021a09] border-2 border-solid border-green-700"
        />
     </div>
      <div className='flex flex-col items-center'>
@@ -63,28 +63,28 @@ function Search() {
        {filteredHicheel.map(h => (
          <Lister key={h.id} id={h.id} title={h.title}  path={`/physic/EYSH_beltgel/${h.name}`} />
        ))}
-       {filteredChemistry.length > 0 && (
-         <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
-         </div>
-       )}
-       {filteredChemistry.map(c => (
-         <Lister key={c.id} id={c.id} title={c.title} description={c.description} path={`/chemistry/${c.id}`} />
-       ))}
        {filteredExperiments.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
+            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
          </div>
        )}
        {filteredExperiments.map(e => (
          <Lister key={e.id} id={e.id} title={e.title} description={e.description} path={`/physic/experiment/${e.name}`} />
        ))}
+        {filteredChemistry.length > 0 && (
+          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
+            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
+          </div>
+        )}
+        {filteredChemistry.map(c => (
+          <Lister key={c.id} id={c.id} title={c.title} description={c.description} path={`/chemistry/${c.id}`} />
+        ))}
        {filteredItems.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
             <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
          </div>
        )}
-       <div className='w-7/12 grid grid-cols-2 sm:grid-cols-3 items-center p-4 gap-4'>
+       <div className='sm:w-7/12 grid grid-cols-2 sm:grid-cols-3 items-center p-4 gap-4'>
         {filteredItems.map(item => (
           <Card key={item.id} id={item.id} title={item.title} img={item.img}  path={`/market/${item.name}`} />
         ))}

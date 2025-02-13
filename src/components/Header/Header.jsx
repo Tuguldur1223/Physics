@@ -19,12 +19,12 @@ function Header() {
                         <button className="flex items-center px-4 py-2 font-bold text-xl text-white rounded-full hover:text-green-700 transition-transform transform-gpu hover:scale-105">Нүүр</button>
                     </Link>
                     <DropdownBtn Btn="Физик " categories={[
-                        { id: "1", category: "6-р анги", link: "/Physic/6" },
-                        { id: "2", category: "7-р анги", link: "/Physic/7" },
-                        { id: "3", category: "8-р анги", link: "/Physic/8" },
-                        { id: "4", category: "9-р анги", link: "/Physic/9" },
-                        { id: "5", category: "10-р анги", link: "/Physic/10" },
-                        { id: "6", category: "11-р анги", link: "/Physic/11" },
+                        { id: "1", category: "6-р анги", link: "/physic/6" },
+                        { id: "2", category: "7-р анги", link: "/physic/7" },
+                        { id: "3", category: "8-р анги", link: "/physic/8" },
+                        { id: "4", category: "9-р анги", link: "/physic/9" },
+                        { id: "5", category: "10-р анги", link: "/physic/10" },
+                        { id: "6", category: "11-р анги", link: "/physic/11" },
                         { id: "7", category: "ЭЕШ бэлтгэл", link: "/physic/EYSH_beltgel" }
                     ]} />
                     <Link to="/chemistry">

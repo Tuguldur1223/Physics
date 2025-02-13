@@ -20,13 +20,14 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
       <Header />  
       <PhoneHeader/>
       {/* Back button */} 
-      <div className='w-10/12 mb-4 mt-10 flex flex-row justify-center items-center'> 
+      <div className='w-10/12 h-10 mb-4 mt-10 flex flex-row justify-center items-center'> 
         <button onClick={() => navigate(-1)} className="flex w-2/12 items-center"> 
           <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
             <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button>
         <h2 className="sm:text-3xl text-xl  w-10/12 text-center text-white font-bold mb-4">{bodlogo.title}</h2> 
+        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" />
       </div>
       {/* Title */}
       <div className="w-11/12 sm:10/12 mt-48 sm:mt-0 flex flex-col items-center mb-8">

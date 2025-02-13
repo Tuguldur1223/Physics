@@ -25,6 +25,7 @@ function ExperimentTemplate({ experiments }) {
           </div>
         </button> 
         <h2 className="text-3xl w-10/12 text-white font-bold">{experiment.title}</h2>
+        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" />
       </div>
       {/* Title */}
       <div className="w-full max-w-2xl mb-8">

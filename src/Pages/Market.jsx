@@ -7,10 +7,10 @@ import Footer from '../components/Footer';
 import PhoneHeader from '../components/Header/phoneHeader'
 function Market() {
   return (
-    <div className='w-full min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
+    <div className='w-full flex items-center flex-col min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
       <Header />
       <PhoneHeader/>
-      <div className='p-4 grid grid-cols-2 sm:grid-cols-5 gap-4'>
+      <div className='sm:w-8/12 p-4 grid grid-cols-2 sm:grid-cols-4 gap-4'>
 
           {items.map(data =>(
             <Card
