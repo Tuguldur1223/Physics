@@ -24,7 +24,7 @@ import {chemistry} from './Datas/Chemistry'
 
 function App() {
   const isPhysicPage = location.pathname.includes('/physic/');
-  const isHomePage = location.pathname.includes('/home/');
+
   return (
     <Router>
       <Routes>
@@ -56,12 +56,12 @@ function App() {
 
         <Route path='/aboutUs' element={<About />}/>
         <Route path='/search' element={<Search />}/>
-        <Route path='/home/favourite' element={<Favourite />}/>
-        <Route path='/login' element={<Login />}/>
+        <Route path='/favourite' element={<Favourite />}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp />}/>
       </Routes>
       
-      {!isPhysicPage && !isHomePage && <PhoneNav />}
+      {!isPhysicPage && <PhoneNav />}
       
     </Router>
   );

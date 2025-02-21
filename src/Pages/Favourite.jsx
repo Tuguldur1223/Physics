@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { items } from '../Datas/Items'; // Importing items data
 import { hicheel } from '../Datas/Hicheel'; // Importing hicheel data
@@ -8,8 +8,21 @@ import Lister from '../components/Body/Lister'; // Importing Lister component
 import Card from '../components/Body/Card';
 
 function Favourite() {
-  const [query, setQuery] = useState(''); // State for search query
+  const [query, setQuery] = useState('');
+  const [data, setData] = useState({})
+   // State for search query
   const navigate = useNavigate(); // Initialize navigate
+
+  useEffect(() => {
+    const x = localStorage.getItem("data");
+    if (x) { // Check if x is not null or undefined
+      const savedData = JSON.parse(x);
+      setData(savedData); // Set the saved data
+    } else {
+      setData({}); // Set to an empty object if no data is found
+    }
+    console.log(data); // Parse the string from localStorage to an object
+  }, []); // Empty dependency array to run only on mount
 
   // Function to handle search input change
   const handleSearchChange = (e) => {
@@ -21,6 +34,9 @@ function Favourite() {
     item.name.toLowerCase().includes(query.toLowerCase()) ||
     item.title.toLowerCase().includes(query.toLowerCase())
   );
+
+  // Include saved experiment in filtered results
+  const filteredSavedExperiment = data ? [data] : []; // Assuming data is the saved experiment
 
   const filteredHicheel = hicheel.filter(h => 
     h.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -80,19 +96,17 @@ function Favourite() {
        {filteredChemistry.map(c => (
          <Lister key={c.id} id={c.id} title={c.title} description={c.description} path={`/chemistry/${c.id}`} />
        ))}
-       {filteredItems.length > 0 && (
+       {filteredSavedExperiment.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
+            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Saved Experiment</h1>
          </div>
        )}
-       <div className='sm:w-7/12 grid grid-cols-2 sm:grid-cols-3 items-center p-4 gap-4'>
-        {filteredItems.map(item => (
-          <Card key={item.id} id={item.id} title={item.title} img={item.img}  path={`/market/${item.name}`} />
-        ))}
-       </div>
+       {filteredSavedExperiment.map(exp => (
+         <Lister key={exp.id} id={exp.id} title={exp.title} description={exp.description} path={`/experiment/${exp.name}`} />
+       ))}
      </div>
    </div>
-  )
+  );
 }
 
 export default Favourite;

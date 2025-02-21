@@ -38,7 +38,7 @@ function Header() {
                     <Link to="/search">
                         <img src="../../../public/search.svg" alt="search" />
                     </Link>
-                    <Link to="/home/favourite">
+                    <Link to="/favourite">
                         <img src="../../../public/bookmark.svg" alt="bookmark" />
                     </Link>
                     <Link to="/login">

@@ -1,18 +1,24 @@
 import { useState, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import { json, useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
 
+
 function ExperimentTemplate({ experiments }) {
+  // const [data, setData] = useState("")
   const navigate = useNavigate();
   const { name } = useParams();
   const experiment = experiments.find(exp => exp.name === name);
+  // localStorage.setItem("data", json.stringify(experiment))
+
 
   if (!experiment) {
     return <div>Experiment not found</div>;
   }
-
+function test(){
+  localStorage.setItem("data", JSON.stringify(experiment.id));
+}
   return ( 
     <div className="w-full min-h-screen pb-20 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
       <Header />  
@@ -25,7 +31,9 @@ function ExperimentTemplate({ experiments }) {
           </div>
         </button> 
         <h2 className="text-3xl w-10/12 text-white font-bold">{experiment.title}</h2>
-        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" />
+        
+        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" onClick={()=>test()}/>
+      
       </div>
       {/* Title */}
       <div className="w-full max-w-2xl mb-8">
