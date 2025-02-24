@@ -17,7 +17,7 @@ function ExperimentTemplate({ experiments }) {
   if (!experiment) {
     return <div>Experiment not found</div>;
   }
-  function test(){
+function test(){
     // Get existing data from localStorage and ensure it's an array
     let existingData = JSON.parse(localStorage.getItem("data"));
     existingData = Array.isArray(existingData) ? existingData : [];
