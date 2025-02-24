@@ -17,7 +17,21 @@ function ExperimentTemplate({ experiments }) {
     return <div>Experiment not found</div>;
   }
 function test(){
-  localStorage.setItem("data", JSON.stringify(experiment.id));
+    // Get existing data from localStorage and ensure it's an array
+    let existingData = JSON.parse(localStorage.getItem("data"));
+    existingData = Array.isArray(existingData) ? existingData : [];
+    
+    // Check if experiment already exists in the array
+    const isExisting = existingData.some(item => item.name === experiment.name);
+    
+    if (!isExisting) {
+        // Add new experiment to the existing data array
+        const newData = [...existingData, {...experiment}];
+        localStorage.setItem("data", JSON.stringify(newData));
+        console.log("Added to bookmarks");
+    } else {
+        console.log("Already in bookmarks");
+    }
 }
   return ( 
     <div className="w-full min-h-screen pb-20 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
