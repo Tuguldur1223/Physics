@@ -6,6 +6,8 @@ import { chemistry } from '../Datas/Chemistry'; // Importing chemistry data
 import { experiments } from '../Datas/Experiments'; // Importing experiments data
 import Lister from '../components/Body/Lister'; // Importing Lister component
 import Card from '../components/Body/Card';
+import PhoneFooter from '../components/phoneFooter'
+import Footer from '../components/Footer';
 
 function Search() {
   const [query, setQuery] = useState(''); // State for search query
@@ -38,7 +40,7 @@ function Search() {
   );
 
   return (
-   <div className="w-full min-h-screen pb-24 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+   <div className="w-full  min-h-screen relative sm:pb-48 pb-[340px] flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
     <div className='flex relative flex-row w-full items-center justify-center'>
      <button onClick={() => navigate(-1)} className="hidden sm:flex absolute top-10 left-56 w-2/12 items-center"> 
         <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
@@ -50,7 +52,7 @@ function Search() {
        placeholder="Search..." 
        value={query} 
        onChange={handleSearchChange} 
-       className="search-input w-9/12 h-10 mt-10 text-white p-2 rounded-lg bg-[#021a09] border-2 border-solid border-green-700"
+       className="search-input w-9/12 sm:w-72 h-10 mt-10 text-white p-2 rounded-lg bg-[#021a09] border-2 border-solid border-green-700"
        />
     </div>
      <div className='flex flex-col items-center'>
@@ -90,6 +92,7 @@ function Search() {
         ))}
        </div>
      </div>
+     <Footer/><PhoneFooter/>
    </div>
   )
 }

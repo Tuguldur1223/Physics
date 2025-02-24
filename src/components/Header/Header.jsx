@@ -41,9 +41,9 @@ function Header() {
                     <Link to="/favourite">
                         <img src="../../../public/bookmark.svg" alt="bookmark" />
                     </Link>
-                    <Link to="/login">
+                    {/* <Link to="/login">
                     <img src="../../../public/profile.svg" alt="profile" className='scale-125' />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>

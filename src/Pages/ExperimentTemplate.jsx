@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { json, useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header/Header'
+import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
 
@@ -16,11 +17,25 @@ function ExperimentTemplate({ experiments }) {
   if (!experiment) {
     return <div>Experiment not found</div>;
   }
-function test(){
-  localStorage.setItem("data", JSON.stringify(experiment.id));
+  function test(){
+    // Get existing data from localStorage and ensure it's an array
+    let existingData = JSON.parse(localStorage.getItem("data"));
+    existingData = Array.isArray(existingData) ? existingData : [];
+    
+    // Check if experiment already exists in the array
+    const isExisting = existingData.some(item => item.name === experiment.name);
+    
+    if (!isExisting) {
+        // Add new experiment to the existing data array
+        const newData = [...existingData, {...experiment}];
+        localStorage.setItem("data", JSON.stringify(newData));
+        console.log("Added to bookmarks");
+    } else {
+        console.log("Already in bookmarks");
+    }
 }
   return ( 
-    <div className="w-full min-h-screen pb-20 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
       <Header />  
       <PhoneHeader/>
       {/* Back button */} 
@@ -65,7 +80,7 @@ function test(){
         </ol>
       </div>
       
-      <Footer />
+      <Footer/><PhoneFooter/>
     </div>
   );
 }

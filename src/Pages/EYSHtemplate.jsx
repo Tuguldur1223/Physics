@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header/Header'
+import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
 function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead of bodlogo
@@ -16,7 +17,7 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
   }
 
   return ( 
-    <div className="w-full min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
       <Header />  
       <PhoneHeader/>
       {/* Back button */} 
@@ -36,7 +37,7 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
-      <Footer />
+      <Footer/><PhoneFooter/>
     </div>
   );
 }

@@ -9,20 +9,20 @@ import Card from '../components/Body/Card';
 
 function Favourite() {
   const [query, setQuery] = useState('');
-  const [data, setData] = useState({})
-   // State for search query
-  const navigate = useNavigate(); // Initialize navigate
+  const [data, setData] = useState({});
+  const navigate = useNavigate();
+  const { name } = useParams();
+  const experiment = experiments.find(exp => exp.name === name);
+  console.log(experiment  ) // Initialize navigate
 
+  // Load saved data from localStorage on component mount
   useEffect(() => {
-    const x = localStorage.getItem("data");
-    if (x) { // Check if x is not null or undefined
-      const savedData = JSON.parse(x);
-      setData(savedData); // Set the saved data
-    } else {
-      setData({}); // Set to an empty object if no data is found
+    const savedData = localStorage.getItem("data");
+    if (savedData) {
+      setData(JSON.parse(savedData));
     }
-    console.log(data); // Parse the string from localStorage to an object
-  }, []); // Empty dependency array to run only on mount
+  }, []);
+  console.log(data)
 
   // Function to handle search input change
   const handleSearchChange = (e) => {
@@ -35,8 +35,13 @@ function Favourite() {
     item.title.toLowerCase().includes(query.toLowerCase())
   );
 
-  // Include saved experiment in filtered results
-  const filteredSavedExperiment = data ? [data] : []; // Assuming data is the saved experiment
+  // Update this section to properly handle saved experiments
+  const filteredSavedExperiment = Object.keys(data).length > 0 
+    ? Object.values(data).filter(item =>
+        item.title?.toLowerCase().includes(query.toLowerCase()) ||
+        item.name?.toLowerCase().includes(query.toLowerCase())
+      )
+    : [];
 
   const filteredHicheel = hicheel.filter(h => 
     h.name.toLowerCase().includes(query.toLowerCase()) ||

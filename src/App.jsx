@@ -16,6 +16,8 @@ import Search from './Pages/Search';
 import Favourite from './Pages/Favourite';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
+import Surtchilgaa from './Pages/Surtchilgaa';
+import HolbooBarih from './Pages/HolbooBarih';
 
 import {experiments} from './Datas/Experiments'
 import {items} from './Datas/Items'
@@ -55,10 +57,13 @@ function App() {
 
 
         <Route path='/aboutUs' element={<About />}/>
+        <Route path='/surtchilgaa' element={<Surtchilgaa />}/>
+        <Route path='/holboobarih' element={<HolbooBarih />}/>
+
         <Route path='/search' element={<Search />}/>
         <Route path='/favourite' element={<Favourite />}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<SignUp />}/>
+        {/* <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<SignUp />}/> */}
       </Routes>
       
       {!isPhysicPage && <PhoneNav />}

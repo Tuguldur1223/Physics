@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from '../components/Header/Header'
 import TopTests from '../components/Body/topTests'
+import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import NewTest from '../components/Body/newTest'
 import { experiments } from '../Datas/Experiments'
@@ -13,7 +14,7 @@ function Home() {
   const lastThreehicheel = hicheel.slice(-3);
   return (
     <>
-      <div className='w-full min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
+      <div className='w-full pb-80  relative sm:pb-48 min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
         <Header />
         <PhoneHeader />
         <TopTests/>
@@ -33,7 +34,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <div className='w-full flex flex-col pb-24 sm:mt-20 mt-6 justify-center items-center'>
+        <div className='w-full flex flex-col pb-10 sm:mt-20 mt-6 justify-center items-center'>
           <div className='flex items-center gap-4 w-10/12'>
             <h1 className='text-white sm:text-4xl text-xl mb-10 font-bold'>Шинэ ЭЕШ-ийн хичээлүүд</h1>
           </div>
@@ -48,7 +49,8 @@ function Home() {
           }
           </div>
         </div>
-        <Footer/>
+        <Footer/><PhoneFooter/>
+        <PhoneFooter/>
       </div>
     </>
   )

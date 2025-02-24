@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header/Header';
+import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer';
 import PhoneHeader from '../components/Header/phoneHeader'
 function itemTemplate({ items }) {
@@ -15,7 +16,7 @@ function itemTemplate({ items }) {
   const title = item.subject === 'chemistry' ? 'Орц' : item.subject === 'physics' ? 'Материал' : 'Материал';
 
   return (
-    <div className="w-full min-h-screen pb-24 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
       <Header />
       <PhoneHeader/>
       {/* Back button */}
@@ -50,7 +51,7 @@ function itemTemplate({ items }) {
         <p>{item.description}</p>
       </div>
 
-      <Footer />
+      <Footer/><PhoneFooter/>
     </div>
   );
 }
