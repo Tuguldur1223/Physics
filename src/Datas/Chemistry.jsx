@@ -3,7 +3,7 @@ export const chemistry = [
       id: 1,
       name: 'pendulum',
       title: 'Яндан дуран',
-      subject: 'Physics',
+      subject: 'Chemistry',
       grade: 6,
       description: 'Learn about pendulum motion and periodic motion.',
       videoSrc: 'https://www.youtube.com/embed/_8JMVl-_KKs',
@@ -21,17 +21,6 @@ export const chemistry = [
         'Repeat the experiment with different lengths of string and record the times.'
       ],
     },
-    {
-      id: 2,
-      name: 'chemical_reaction',
-      title: 'Chemical Reaction',
-      subject: 'Physics',
-      grade: 7,
-      description: 'Explore how different chemicals react with each other.',
-      videoSrc: 'https://www.youtube.com/embed/YOUR_VIDEO_ID',
-      materials: [],
-      steps: []
-    }
   ];
   
   

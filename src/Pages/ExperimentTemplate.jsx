@@ -1,39 +1,47 @@
 import { useState, useEffect } from 'react'
-import { json, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header/Header'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
-
+import bookmarkStroke from '../../public/bookmarkStroke.svg'
+import bookmark from '../../public/bookmark.svg'
 
 function ExperimentTemplate({ experiments }) {
-  // const [data, setData] = useState("")
   const navigate = useNavigate();
   const { name } = useParams();
   const experiment = experiments.find(exp => exp.name === name);
-  // localStorage.setItem("data", json.stringify(experiment))
+  const [isBookmarked, setIsBookmarked] = useState(false);
 
+  useEffect(() => {
+    // Check if the experiment is already bookmarked on component mount
+    let existingExperiment = JSON.parse(localStorage.getItem("experiments")) || [];
+    const isExisting = existingExperiment.some(item => item.name === experiment.name);
+    setIsBookmarked(isExisting);
+  }, [experiment]);
 
-  if (!experiment) {
-    return <div>Experiment not found</div>;
-  }
-function test(){
+  function save() {
     // Get existing data from localStorage and ensure it's an array
-    let existingData = JSON.parse(localStorage.getItem("data"));
-    existingData = Array.isArray(existingData) ? existingData : [];
+    let existingExperiment = JSON.parse(localStorage.getItem("experiments")) || [];
     
     // Check if experiment already exists in the array
-    const isExisting = existingData.some(item => item.name === experiment.name);
+    const isExisting = existingExperiment.some(item => item.name === experiment.name);
     
     if (!isExisting) {
-        // Add new experiment to the existing data array
-        const newData = [...existingData, {...experiment}];
-        localStorage.setItem("data", JSON.stringify(newData));
-        console.log("Added to bookmarks");
+      // Add new experiment to the existing data array
+      const newData = [...existingExperiment, { ...experiment }];
+      localStorage.setItem("experiments", JSON.stringify(newData));
+      console.log("Added to bookmarks");
+      setIsBookmarked(true); // Update bookmark status
     } else {
-        console.log("Already in bookmarks");
+      // Remove the experiment from bookmarks
+      const newData = existingExperiment.filter(item => item.name !== experiment.name);
+      localStorage.setItem("experiments", JSON.stringify(newData));
+      console.log("Removed from bookmarks");
+      setIsBookmarked(false); // Update bookmark status
     }
-}
+  }
+
   return ( 
     <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
       <Header />  
@@ -47,7 +55,12 @@ function test(){
         </button> 
         <h2 className="text-3xl w-10/12 text-white font-bold">{experiment.title}</h2>
         
-        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" onClick={()=>test()}/>
+        <img 
+          src={isBookmarked ? bookmark : bookmarkStroke}
+          alt="bookmark" 
+          onClick={() => save()} 
+        />
+        
       
       </div>
       {/* Title */}

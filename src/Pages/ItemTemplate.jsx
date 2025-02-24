@@ -1,13 +1,46 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import bookmarkStroke from '../../public/bookmarkStroke.svg';
+import bookmark from '../../public/bookmark.svg';
 import Header from '../components/Header/Header';
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer';
 import PhoneHeader from '../components/Header/phoneHeader'
-function itemTemplate({ items }) {
+
+function ItemTemplate({ items }) {
   const navigate = useNavigate();
   const { name } = useParams();
   const item = items.find(exp => exp.name === name);
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
+  useEffect(() => {
+    // Check if the item is already bookmarked on component mount
+    let existingItems = JSON.parse(localStorage.getItem("items")) || [];
+    const isExisting = existingItems.some(savedItem => savedItem.name === item.name);
+    setIsBookmarked(isExisting); // Set initial bookmark status
+  }, [item]);
+
+  function save() {
+    // Get existing data from localStorage and ensure it's an array
+    let existingItems = JSON.parse(localStorage.getItem("items")) || [];
+    
+    // Check if item already exists in the array
+    const isExisting = existingItems.some(savedItem => savedItem.name === item.name);
+    
+    if (!isExisting) {
+      // Add new item to the existing data array
+      const newData = [...existingItems, { ...item }];
+      localStorage.setItem("items", JSON.stringify(newData)); // Save to localStorage
+      console.log("Added to bookmarks");
+      setIsBookmarked(true); // Update bookmark status
+    } else {
+      // Remove the item from bookmarks
+      const newData = existingItems.filter(savedItem => savedItem.name !== item.name);
+      localStorage.setItem("items", JSON.stringify(newData)); // Save to localStorage
+      console.log("Removed from bookmarks");
+      setIsBookmarked(false); // Update bookmark status
+    }
+  }
 
   if (!item) {
     return <div>item not found</div>;
@@ -20,17 +53,23 @@ function itemTemplate({ items }) {
       <Header />
       <PhoneHeader/>
       {/* Back button */}
-      <div className='w-10/12 mb-4 mt-10 flex flex-row justify-center items-center'>
+      <div className='w-10/12 mb-8 mt-10 flex flex-row justify-center items-center'>
         <button onClick={() => navigate(-1)} className="w-2/12 flex items-center">
-          <div className='w-10 h-10 rounded-full bg-green-700 flex items-center justify-center'>
+          <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
             <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button>
         <h2 className="text-3xl w-10/12 text-white font-bold">{item.title}</h2>
+        
+        <img 
+          src={isBookmarked ? bookmark : bookmarkStroke} // Use bookmark icon if saved
+          alt="bookmark" 
+          onClick={() => save()} // Call save function on click
+        />
       </div>
       {/* Title */}
       <div className="max-w-2xl sm:w-full w-5/6 mb-8">
-        <img src={item.img} alt={item.title} />
+        <img src={item.img} alt={item.title} className=' rounded-lg'/>
       </div>
       <div className='max-w-2xl sm:w-full w-5/6 mb-8 bg-white p-6 rounded shadow-lg flex flex-row'>
         <h1 className='text-2xl font-bold'>Үнэ:</h1>
@@ -56,4 +95,4 @@ function itemTemplate({ items }) {
   );
 }
 
-export default itemTemplate;
+export default ItemTemplate;

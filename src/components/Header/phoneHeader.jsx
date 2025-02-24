@@ -19,7 +19,7 @@ function PhoneHeader() {
                         <img src="../../../public/search.svg" alt="search"/>
                     </Link>
                     <Link to="/favourite">
-                        <img src="../../../public/bookmark.svg" alt="bookmark"/>
+                        <img src="../../../public/save.svg" alt="bookmark" className='scale-[0.65]'/>
                     </Link>
                     {/* <Link to="/login">
                     <img src="../../../public/profile.svg" alt="profile" className='scale-125' />

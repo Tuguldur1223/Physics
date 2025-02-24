@@ -25,8 +25,10 @@ function ExperimentList({ Subject }) {
             key={data.id} 
             id={data.id} 
             title={data.title} 
+            name={data.name}
             description={data.description} 
-            path={`/physic/experiment/${data.name}`} 
+            path={`/physic/experiment/${data.name}`}
+            type="experiments" 
           />
         ))
       }

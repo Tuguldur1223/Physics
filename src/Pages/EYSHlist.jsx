@@ -17,7 +17,9 @@ function EYSHlist({hicheel}) {
             key={data.id} 
             id={data.id} 
             title={data.title} 
+            name={data.name}
             path={`/physic/EYSH_beltgel/${data.name}`} 
+            type="eyesh"
           />)
       }
       <Footer/><PhoneFooter/>

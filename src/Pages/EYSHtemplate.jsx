@@ -1,12 +1,17 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react'
 import Header from '../components/Header/Header'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
+import bookmarkStroke from '../../public/bookmarkStroke.svg'
+import bookmark from '../../public/bookmark.svg'
+
 function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead of bodlogo
   const navigate = useNavigate();
   const { name } = useParams();  // Get the name parameter from URL
-  
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   const bodlogo = hicheel.find(item => item.name === name);
   console.log('URL name:', name);  // Debug log
   console.log('Found bodlogo:', bodlogo);  // Debug log
@@ -14,6 +19,35 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
   if (!bodlogo) {
     navigate('/EYSH_beltgel');
     return null;
+  }
+
+  useEffect(() => {
+    // Check if the experiment is already bookmarked on component mount
+    let existingExperiment = JSON.parse(localStorage.getItem("eyesh")) || [];
+    const isExisting = existingExperiment.some(item => item.name === bodlogo.name);
+    setIsBookmarked(isExisting);
+  }, [bodlogo]);
+
+  function save() {
+    // Get existing data from localStorage and ensure it's an array
+    let existingEyesh = JSON.parse(localStorage.getItem("eyesh")) || [];
+    
+    // Check if Eyesh already exists in the array
+    const isExisting = existingEyesh.some(item => item.name === bodlogo.name);
+    
+    if (!isExisting) {
+      // Add new Eyesh to the existing data array
+      const newData = [...existingEyesh, { ...bodlogo }];
+      localStorage.setItem("eyesh", JSON.stringify(newData));
+      console.log("Added to bookmarks");
+      setIsBookmarked(true); // Update bookmark status
+    } else {
+      // Remove the Eyesh from bookmarks
+      const newData = existingEyesh.filter(item => item.name !== bodlogo.name);
+      localStorage.setItem("eyesh", JSON.stringify(newData));
+      console.log("Removed from bookmarks");
+      setIsBookmarked(false); // Update bookmark status
+    }
   }
 
   return ( 
@@ -28,7 +62,11 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
           </div>
         </button>
         <h2 className="sm:text-3xl text-xl  w-10/12 text-center text-white font-bold mb-4">{bodlogo.title}</h2> 
-        <img src="../../../public/bookmarkStroke.svg" alt="bookmark" />
+        <img 
+          src={isBookmarked ? bookmark : bookmarkStroke}
+          alt="bookmark" 
+          onClick={() => save()} 
+        />
       </div>
       {/* Title */}
       <div className="w-11/12 sm:10/12 mt-48 sm:mt-0 flex flex-col items-center mb-8">
@@ -37,7 +75,7 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
-      <Footer/><PhoneFooter/>
+      <Footer/>
     </div>
   );
 }

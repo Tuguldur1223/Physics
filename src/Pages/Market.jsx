@@ -19,6 +19,8 @@ function Market() {
             id={data.id} 
               title={data.title} 
               description={data.description}
+              name={data.name}
+              type="items"
               img={data.img}
               price={data.price} 
               path={`/market/${data.name}`} 
