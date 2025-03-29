@@ -35,22 +35,24 @@ function Card(props) {
     }
   }
   return (
-    <div className="w-full relative text-white h-[290px] bg-[#08472B] rounded-xl">
+    <div className="w-full relative text-black h-[290px] bg-gradient-to-bl drop-shadow-xl from-[#a5a5a5] via-[#d4d4d4] via-70% to-[#b8b8b8] rounded-xl">
         <div key={props.id} className="w-full h-full p-4 relative">
         <Link
             to={props.path}
         >
           <img src={props.img} alt={props.title} className='rounded-lg' />
-          <h3 className="text-2xl font-bold mt-2">{props.title}</h3>
-          <p className='text-2xl font-semibold bottom-2 absolute'>Үнэ:{props.price}₮</p>
+          <h3 className="text-xl font-bold mt-2">{props.title}</h3>
+          <p className='text-lg font-semibold bottom-2 absolute'>Үнэ:{props.price}₮</p>
         </Link>
         </div>
-        <img 
-        className='absolute bottom-3 right-4'
-        src={isBookmarked ? bookmark : bookmarkStroke}
-        alt="bookmark" 
-        onClick={() => save()} 
-        />
+        <div className='bg-black w-6 h-6 rounded-full absolute bottom-3 right-4 flex justify-center items-center'>
+          <img 
+            className='scale-[65%]'
+            src={isBookmarked ? bookmark : bookmarkStroke}
+            alt="bookmark" 
+            onClick={() => save()} 
+          />
+        </div>
     </div>
   )
 }

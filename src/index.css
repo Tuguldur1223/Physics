@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-image: linear-gradient(135deg, #002C29, #212626, #2A252C, black);
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: linear-gradient(135deg, #2A4A59, #29334F);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
+  transition: background-image 1s ease;
 }
 
 /* Add padding for screens larger than small breakpoint (sm) */
-@media (min-width: 640px) {
-  :root {
-    padding: 50px;
-  }
+
+* {
+  @apply transition-colors duration-200;
+  @apply transition-opacity duration-200;
+  @apply transition-transform duration-200;
+  transition: background-image 3s ease;
 }

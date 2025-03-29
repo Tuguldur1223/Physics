@@ -51,17 +51,16 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
   }
 
   return ( 
-    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
-      <Header />  
-      <PhoneHeader/>
+    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center pt-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%">
+      
       {/* Back button */} 
       <div className='w-10/12 h-10 mb-4 mt-10 flex flex-row justify-center items-center'> 
         <button onClick={() => navigate(-1)} className="flex w-2/12 items-center"> 
-          <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
+          <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
             <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button>
-        <h2 className="sm:text-3xl text-xl  w-10/12 text-center text-white font-bold mb-4">{bodlogo.title}</h2> 
+        <h2 className="sm:text-3xl text-xl  w-10/12 text-centet text-black dark:text-white font-bold mb-4">{bodlogo.title}</h2> 
         <img 
           src={isBookmarked ? bookmark : bookmarkStroke}
           alt="bookmark" 

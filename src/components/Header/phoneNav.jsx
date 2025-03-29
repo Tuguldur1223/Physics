@@ -30,7 +30,7 @@ function NavBar() {
   };
 
   return (
-    <div className="bg-[#08472B] sm:hidden h-20 w-full px-6 rounded-t-xl flex justify-center items-center fixed bottom-0 left-0 right-0 z-50 max-w-screen-xl mx-auto" style={{ marginBottom: 0 }}>
+    <div className="bg-black sm:hidden h-20 w-full px-6 rounded-t-xl flex justify-center items-center fixed bottom-0 left-0 right-0 z-50 max-w-screen-xl mx-auto" style={{ marginBottom: 0 }}>
       <ul className="flex relative h-full">
         <span
           className="bg-[#F5F3F4] h-16 w-16 absolute -top-7 rounded-full ml-2 -z-10"
@@ -68,7 +68,7 @@ function NavBar() {
                   alt={tab.name} 
                 />
                 <span
-                  className={`transition-all duration-500 ease-in-out ${
+                  className={`transition-all text-black duration-500 ease-in-out ${
                     activeIndex === i
                       ? "translate-y-2 opacity-100"
                       : "translate-y-10 opacity-0"

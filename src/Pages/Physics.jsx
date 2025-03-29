@@ -12,11 +12,11 @@ function Physics() {
         { id: "7", category: "ЭЕШ бэлтгэл", link: "/physic/EYSH_beltgel" }
     ]
   return (
-   <div className=' flex flex-wrap justify-center gap-5 items-center'>
-        <PhoneHeader/>
+   <div className='min-h-screen pb-40 pt-12 flex flex-wrap justify-center gap-5 items-center  text-black dark:text-white  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%'>
+        
         {links.map(data =>(
             <Link key={data.id} to={data.link}>
-                <div className='w-40 h-40 text-xl text-center flex justify-center items-center text-white border-2 border-solid border-green-500 hover:bg-[#08472B] border-opacity-30 rounded-lg'>
+                <div className='w-40 h-40 text-xl text-center flex justify-center items-center border-2 border-solid dark:border-white border-black hover:drop-shadow-xl border-opacity-30 rounded-lg'>
                     <p>
                         {data.category}
                     </p>

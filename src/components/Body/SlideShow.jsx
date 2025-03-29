@@ -40,9 +40,9 @@ function SlideShow() {
 
   return (
     
-      <div className="w-full flex flex-row justify-center items-center sm:gap-8 gap-2" >
+      <div className={`w-full flex flex-row justify-center items-center sm:gap-8 gap-2`} >
         <button 
-            className="bg-[#08472B] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
+            className="bg-[#5B93FF] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={prevSlide}
           >
             <img src="../../../public/leftArrow.svg" alt="leftArrow" className='sm:scale-100 scale-75'/>
@@ -58,18 +58,18 @@ function SlideShow() {
             <Play/>
             </button>
             <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
-            <img src="../../../public/bookmark.svg" alt="bookmark" className='scale-50 sm:scale-100'/>
+            <img src="../../../public/bookmark.svg" alt="bookmark" className='scale-50 sm:scale-90'/>
             </button>
           </div>
-          <div className='bg-black bg-opacity-50 blur-[0.4px] p-2 rounded-xl  w-2/3'>
-          <h2 className="sm:text-[40px] opacity-100 text-[10px] font-bold text-white text-left">{slides[currentSlide].title}</h2>
-          <p className="sm:text-2xl text-[5px] font-medium text-gray-500 text-center ">{slides[currentSlide].content}</p>
+          <div className='p-2 rounded-xl  w-2/3'>
+          <h2 className="sm:text-[40px] opacity-100 text-[10px] font-extrabold text-white text-left">{slides[currentSlide].title}</h2>
+          <p className="sm:text-xl text-[5px] font-medium text-white ">{slides[currentSlide].content}</p>
           </div>
         </div>
         
           
         <button 
-            className="bg-[#08472B] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
+            className="bg-[#5B93FF] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={nextSlide}
         >
             <img src="../../../public/rightArrow.svg" alt="rightArrow" className='sm:scale-100 scale-75'/>

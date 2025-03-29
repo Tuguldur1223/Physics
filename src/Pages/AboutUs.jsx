@@ -7,22 +7,21 @@ import Footer from '../components/Footer'
 function AboutUs() {
 
   return (
-      <div className=' pb-80 relative sm:pb-48 w-full min-h-screen text-white bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80% flex flex-col items-center'>
-        <Header />
-        <PhoneHeader />
+      <div className=' pb-80 relative sm:pb-48 w-full min-h-screen dark:text-white text-black pt-12 sm:-mt-[50px] -mt-[65px] transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80% flex flex-col items-center'>
+        
 
 
-        <h1 className='text-3xl font-bold mt-10 sm:mt-20 '>Бидний тухай</h1>
+        <h1 className='text-3xl font-bold mt-20 sm:mt-20 '>Бидний тухай</h1>
         <p>Home / About us</p>
 
 
-        <div className='w-11/12 flex-wrap-reverse mt-24 flex sm:flex-row justify-center gap-10 sm:gap-40 items-center'>
+        <div className='sm:w-11/12 w-10/12 flex-wrap-reverse sm:mt-24 mt-10 flex sm:flex-row justify-center gap-10 sm:gap-40 items-center'>
           <div className='sm:w-1/3 flex flex-col justify-center items-center'>
             <h1 className='text-2xl w-full font-bold'>Who we are</h1>
             <p className='text-lg font-semibold w-full mt-4'>Тухайн төсөл нь Амжилт Кибер сургуулийн 2025 оны 6-11
             дүгээр ангийн сурагчдын зүгээс Физик, Химийн судлагдахууны хүрээнд зохион байгуулсан болно.</p>
           </div>
-          <div className='w-11/12 sm:w-1/3 bg-slate-600 h-56 rounded-xl'>
+          <div className='w-full sm:w-1/3 bg-slate-600 h-56 rounded-xl'>
           <img src="" alt="" />
           </div>
         </div>
@@ -49,8 +48,8 @@ function AboutUs() {
 
         <div className='w-full flex flex-col justify-center items-center mb-16'>
           <h1 className='text-3xl font-bold mt-20 '>Манай баг</h1>
-          <div className='w-full flex flex-row justify-center '>
-            <div className='w-1/2 h-80 sm:h-auto flex flex-col items-center'>
+          <div className='w-full flex sm:flex-row flex-col items-center justify-center '>
+            <div className='sm:w-1/2 sm:h-80 sm:h-auto flex flex-col items-center'>
               <h1 className='text-xl font-semibold p-8'>MANAGEMENT TEAM</h1>
               <div className='flex w-full gap-2'>
                 <h1 className='text-md font-semibold w-1/2 text-end'>Санаачлагч</h1>
@@ -66,7 +65,7 @@ function AboutUs() {
                 6-11 ангийн сурагчид</h1>
               </div>
             </div>
-            <div className='w-1/2 h-80 sm:h-auto flex flex-col items-center'>
+            <div className='sm:w-1/2 h-80 sm:h-auto flex flex-col items-center'>
               <h1 className='text-xl font-semibold p-8'>DEVELOPMENT TEAM</h1>
               <div className='flex w-full gap-2'>
                 <h1 className='text-md font-semibold w-1/2 text-end'>Frontend хөгжүүлэгч</h1>

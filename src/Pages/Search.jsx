@@ -39,10 +39,10 @@ function Search() {
   );
 
   return (
-   <div className="w-full  min-h-screen relative sm:pb-48 pb-24 flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+   <div className="w-full  min-h-screen relative sm:pb-48 pb-24 flex flex-col text-black dark:text-white items-center pt-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%">
     <div className='flex relative flex-row w-full items-center justify-center'>
      <button onClick={() => navigate(-1)} className="hidden sm:flex absolute top-10 left-56 w-2/12 items-center"> 
-        <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
+        <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
           <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
         </div>
       </button>
@@ -51,14 +51,14 @@ function Search() {
        placeholder="Search..." 
        value={query} 
        onChange={handleSearchChange} 
-       className="search-input w-9/12 sm:w-72 h-10 mt-10 text-white p-2 rounded-lg bg-[#021a09] border-2 border-solid border-green-700"
+       className="search-input w-9/12 sm:w-72 h-10 mt-10  p-2 rounded-lg text-white bg-[#111416] border-2 border-solid border-[#5B93FF]"
        />
     </div>
      <div className='flex flex-col items-center'>
        {/* Display filtered results using Lister component */}
        {filteredHicheel.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>ЭЕШ-ийн хичээлүүд</h1>
+            <h1 className=' sm:text-4xl mt-10 text-2xl font-bold'>ЭЕШ-ийн хичээлүүд</h1>
          </div>
        )}
        {filteredHicheel.map(h => (
@@ -66,7 +66,7 @@ function Search() {
        ))}
        {filteredExperiments.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
+            <h1 className=' sm:text-4xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
          </div>
        )}
        {filteredExperiments.map(e => (
@@ -74,7 +74,7 @@ function Search() {
        ))}
         {filteredChemistry.length > 0 && (
           <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
+            <h1 className=' sm:text-4xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
           </div>
         )}
         {filteredChemistry.map(c => (
@@ -82,7 +82,7 @@ function Search() {
         ))}
        {filteredItems.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
+            <h1 className=' sm:text-4xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
          </div>
        )}
        <div className='sm:w-7/12 grid grid-cols-2 sm:grid-cols-3 items-center p-4 gap-4'>

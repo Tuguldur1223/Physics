@@ -43,13 +43,12 @@ function ExperimentTemplate({ experiments }) {
   }
 
   return ( 
-    <div className="w-full pb-80 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
-      <Header />  
-      <PhoneHeader/>
+    <div className="w-full pb-96 relative sm:pb-48 min-h-screen flex flex-col items-center pt-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%">
+      
       {/* Back button */} 
       <div className='w-10/12 mb-4 mt-10 flex flex-row justify-center items-center'> 
         <button onClick={() => navigate(-1)} className="w-2/12 flex items-center"> 
-          <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
+          <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
             <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button> 
@@ -64,7 +63,7 @@ function ExperimentTemplate({ experiments }) {
       
       </div>
       {/* Title */}
-      <div className="w-full max-w-2xl mb-8">
+      <div className="sm:w-full w-11/12  max-w-2xl mb-8">
         <iframe
           className="w-full aspect-video rounded shadow-lg"
           src={experiment.videoSrc}
@@ -75,7 +74,7 @@ function ExperimentTemplate({ experiments }) {
         />
       </div>
       {/* What you need */}
-      <div className="w-full max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
+      <div className="sm:w-full w-11/12 max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
         <h3 className="text-2xl font-semibold mb-4">Хэрэглэгдэхүүн</h3>
         <ul className="list-disc list-inside">
           {experiment.materials.map((item, index) => (
@@ -84,7 +83,7 @@ function ExperimentTemplate({ experiments }) {
         </ul>
       </div>
       {/* How to do it */}
-      <div className="w-full max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
+      <div className="sm:w-full w-11/12 max-w-2xl mb-8 bg-white p-6 rounded shadow-lg">
         <h3 className="text-2xl font-semibold mb-4">Алхам</h3>
         <ol className="list-decimal list-inside">
           {experiment.steps.map((step, index) => (

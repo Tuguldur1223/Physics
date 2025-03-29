@@ -8,10 +8,9 @@ import Footer from '../components/Footer';
 import PhoneHeader from '../components/Header/phoneHeader'
 function Market() {
   return (
-    <div className='w-full pb-96 relative sm:pb-48 flex items-center flex-col min-h-screen sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%'>
-      <Header />
-      <PhoneHeader/>
-      <div className='sm:w-8/12 p-4 grid grid-cols-2 sm:grid-cols-4 gap-4'>
+    <div className='w-full pt-20  pb-96 relative sm:pb-56 flex items-center flex-col min-h-screen t-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%'>
+      
+      <div className='sm:w-full p-4 sm:px-16 grid grid-cols-2 sm:grid-cols-5 gap-4'>
 
           {items.map(data =>(
             <Card

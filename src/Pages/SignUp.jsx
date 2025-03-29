@@ -18,7 +18,7 @@ function SignUp() {
 
   return (
     <div className="w-full sm:min-h-screen h-full flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
-      <PhoneHeader />
+      
       <div className='relative w-10/12 '>
         <button onClick={() => navigate(-1)} className="flex absolute left-0 top-10 w-2/12 items-center"> 
             <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>

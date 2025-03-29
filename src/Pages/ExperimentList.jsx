@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react'
-import Header from '../components/Header/Header'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import Lister from '../components/Body/Lister';
@@ -14,10 +13,9 @@ function ExperimentList({ Subject }) {
   console.log('Filtered experiments:', experiments.filter(data => data.grade === Grade && data.subject === Subject));
 
   return (
-    <div className="w-full pb-96 relative sm:pb-48 min-h-screen flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
-      <Header />
-      <PhoneHeader/>
-      <h2 className="text-3xl text-center font-bold mb-8 text-white mt-10">{Grade}-р ангийн физикийн туршилтууд</h2>
+    <div className="w-full pt-20 pb-96 relative sm:pb-56 text-black dark:text-white min-h-screen flex flex-col items-center t-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%">
+      
+      <h2 className="text-3xl text-center font-bold mb-8 mt-10">{Grade}-р ангийн физикийн туршилтууд</h2>
       {experiments
         .filter(data => data.grade === Grade && data.subject === Subject)
         .map(data => (

@@ -36,21 +36,21 @@ function Favourite() {
 
 
   return (
-   <div className="w-full  min-h-screen relative sm:pb-48 pb-[340px] flex flex-col items-center sm:bg-gradient-to-b from-[#101214] from-20% to-[#1B1D20] to-80%">
+   <div className="w-full  min-h-screen relative text-black dark:text-white sm:pb-48 pb-[340px] flex flex-col items-center pt-12 -mt-[50px]  transition-colors duration-500 bg-[#FDFDFD] dark:bg-gradient-to-b dark:from-[#101214] dark:from-20% dark:to-[#1B1D20] dark:to-80%">
     <div className='flex relative flex-row w-full items-center justify-center'>
      <button onClick={() => navigate(-1)} className="flex absolute top-10 left-4 w-2/12 items-center"> 
-        <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
+        <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
           <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
         </div>
       </button>
-      <h1 className='text-white sm:text-4xl mt-10 text-4xl font-bold'>Хадгалсан зүйлс</h1>
+      <h1 className='sm:text-4xl mt-10 text-4xl font-bold'>Хадгалсан зүйлс</h1>
     </div>
      <div className='flex flex-col items-center'>
       
        {/* New section to display saved experiments */}
        {savedExperiments.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
+            <h1 className='sm:text-3xl mt-10 text-2xl font-bold'>Физикийн туршилтууд</h1>
          </div>
        )}
        {savedExperiments.map(exp => (
@@ -60,7 +60,7 @@ function Favourite() {
 
        {savedEyesh.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>ЭЕШ-ийн хичээлүүд</h1>
+            <h1 className='sm:text-3xl mt-10 text-2xl font-bold'>ЭЕШ-ийн хичээлүүд</h1>
          </div>
        )}
        {savedEyesh.map(exp => (
@@ -70,7 +70,7 @@ function Favourite() {
 
        {savedChemistry.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
+            <h1 className='sm:text-3xl mt-10 text-2xl font-bold'>Химийн туршилтууд</h1>
          </div>
        )}
        {savedChemistry.map(exp => (
@@ -80,7 +80,7 @@ function Favourite() {
 
        {savedItems.length > 0 && (
          <div className='flex items-center gap-4 w-10/12 sm:w-7/12'>
-            <h1 className='text-white sm:text-4xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
+            <h1 className='sm:text-3xl mt-10 text-2xl font-bold'>Бараа бүтээгдэхүүн</h1>
          </div>
        )}
        <div className='sm:w-7/12 grid grid-cols-2 sm:grid-cols-3 items-center p-4 gap-4'>

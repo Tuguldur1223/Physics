@@ -37,23 +37,25 @@ function Lister(props) {
   }
 
   return (
-    <div className="sm:w-[600px] relative text-white w-4/5 grid grid-cols-1 gap-6 mt-10">
-      <div key={props.id} className="bg-gradient-to-br from-[#08472B] to-[#101214] p-6 rounded shadow-lg">
-        <h3 className="text-2xl font-semibold mb-2">{props.title}</h3>
-        <p className="text-lg mb-4">{props.description}</p>
+    <div className="sm:w-[600px] relative text-black w-4/5 grid grid-cols-1 gap-6 mt-8">
+      <div key={props.id} className="bg-gradient-to-bl from-[#797979] via-[#d6d6d6] via-70% to-[#cecece] p-6 rounded shadow-lg">
+        <h3 className="text-xl font-bold mb-2">{props.title}</h3>
+        <p className="text-md mb-4">{props.description}</p>
         <Link
           to={props.path}
-          className=" hover:underline"
+          className="hover:underline text-sm font-thin"
         >
           Цааш үзэх
         </Link>
       </div>
-      <img 
-        className='absolute top-4 right-4'
-        src={isBookmarked ? bookmark : bookmarkStroke}
-        alt="bookmark" 
-        onClick={() => save()} 
-      />
+      <div className='bg-black w-10 h-10 rounded-full absolute top-4 right-4 flex justify-center items-center'>
+        <img 
+          className=''
+          src={isBookmarked ? bookmark : bookmarkStroke}
+          alt="bookmark" 
+          onClick={() => save()} 
+        />
+      </div>
     </div>
   )
 }
