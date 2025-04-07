@@ -4,8 +4,8 @@ import Header from '../components/Header/Header'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
-import bookmarkStroke from '../../public/bookmarkStroke.svg'
-import bookmark from '../../public/bookmark.svg'
+import bookmarkStroke from '/bookmarkStroke.svg'
+import bookmark from '/bookmark.svg'
 
 function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead of bodlogo
   const navigate = useNavigate();
@@ -57,7 +57,7 @@ function EYSHtemplate({ hicheel }) {  // Change to receive hicheel array instead
       <div className='w-10/12 h-10 mb-4 mt-10 flex flex-row justify-center items-center'> 
         <button onClick={() => navigate(-1)} className="flex w-2/12 items-center"> 
           <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
-            <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
+            <img src="/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button>
         <h2 className="sm:text-3xl text-xl  w-10/12 text-centet text-black dark:text-white font-bold mb-4">{bodlogo.title}</h2> 

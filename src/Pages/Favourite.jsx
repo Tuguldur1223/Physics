@@ -40,7 +40,7 @@ function Favourite() {
     <div className='flex relative flex-row w-full items-center justify-center'>
      <button onClick={() => navigate(-1)} className="flex absolute top-10 left-4 w-2/12 items-center"> 
         <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
-          <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
+          <img src="/leftArrow.svg" alt="leftArrow"/>
         </div>
       </button>
       <h1 className='sm:text-4xl mt-10 text-4xl font-bold'>Хадгалсан зүйлс</h1>

@@ -20,7 +20,7 @@ function Login() {
       <div className='relative w-10/12 '>
         <button onClick={() => navigate(-1)} className="flex absolute left-0 top-10 w-2/12 items-center"> 
             <div className='w-10 h-10 rounded-full bg-[#08472B] flex items-center justify-center'>
-                <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
+                <img src="/leftArrow.svg" alt="leftArrow"/>
             </div>
         </button>
       </div>

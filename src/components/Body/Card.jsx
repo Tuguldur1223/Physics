@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import bookmarkStroke from '../../../public/bookmarkStroke.svg'
-import bookmark from '../../../public/bookmark.svg'
+import bookmarkStroke from '/bookmarkStroke.svg'
+import bookmark from '/bookmark.svg'
   
 function Card(props) {
   const [isBookmarked, setIsBookmarked] = useState(false);

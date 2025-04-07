@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import DropdownBtn from './DropdownBtn';
 import { useContext } from 'react';
-import sun from '../../../public/sun.svg'
-import moon from '../../../public/moon.svg'
+import sun from '/sun.svg'
+import moon from '/moon.svg'
+import logo from '/logo.png'
 
 function Header({ darkMode, toggleDarkMode }) {
     // Use the props passed from App.jsx instead of reading from localStorage
@@ -10,14 +11,12 @@ function Header({ darkMode, toggleDarkMode }) {
     return (
         <div className="w-full sticky text-white bg-black dark:bg-[#101214] rounded-b-xl h-16 hidden sm:flex z-50">
             <div className="flex flex-row justify-between items-center w-full h-full">
-                <div className="w-2/12 flex justify-center items-center z-10">
-                    <Link to="/">
-                    <div className='flex flex-col justify-center items-center'>
-                        <h1 className='text-3xl'>Amjilt</h1>
-                        <p className='text-[10px]'>Physics & Chemistry tests</p>
+                <Link to="/" className="w-3/12 flex items-center justify-center z-10">
+                    <div className="w-full gap-2 flex relative flex-row justify-center items-center">
+                        <img src={logo} alt="logo" className='w-12' />
+                        <p className='font-bold text-lg'>Amjilt STEM</p>
                     </div>
-                    </Link>
-                </div>
+                </Link>
                 <div className="flex flex-row w-8/12 gap-12 relative z-10">
                     <Link to="/">
                         <button className="flex items-center px-4 py-2 font-bold text-xl rounded-full hover:text-[#5B93FF] transition-transform transform-gpu hover:scale-105">Нүүр</button>
@@ -40,10 +39,10 @@ function Header({ darkMode, toggleDarkMode }) {
                 </div>
                 <div className="w-3/12 gap-8 flex justify-center items-center relative z-10">
                     <Link to="/search">
-                        <img src="../../../public/search.svg" alt="search" />
+                        <img src="/search.svg" alt="search" />
                     </Link>
                     <Link to="/favourite">
-                        <img src="../../../public/save.svg" alt="bookmark" className='scale-[0.65]' />
+                        <img src="/save.svg" alt="bookmark" className='scale-[0.65]' />
                     </Link>
                     <button 
                         onClick={toggleDarkMode} 

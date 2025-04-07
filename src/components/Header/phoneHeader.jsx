@@ -1,30 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import sun from '../../../public/sun.svg'
-import moon from '../../../public/moon.svg'
+import sun from '/sun.svg'
+import moon from '/moon.svg'
+import logo from '/logo.png'
 
 function PhoneHeader({ darkMode, toggleDarkMode }) {
     return (
         <div className='w-full sticky h-16 flex sm:hidden bg-black dark:bg-[#101214] text-white top-0 left-0 z-50'>
             <div className="flex flex-row justify-between items-center w-full h-full ">
-                <div className="w-5/12 flex justify-center items-center z-10">
-                    <Link to="/">
-                    <div className=' flex flex-col justify-center items-center'>
-                        <h1 className='text-3xl'>Amjilt</h1>
-                        <p className='text-[10px]'>Physics & Chemistry tests</p>
-                    </div>
+                
+                    <Link to="/" className="w-5/12 flex items-center justify-center z-10">
+                        <div className="w-full gap-2 flex relative flex-row justify-center items-center">
+                            <img src={logo} alt="logo" className='w-12' />
+                            <p className='font-bold text-lg'>Amjilt STEM</p>
+                        </div>
                     </Link>
-                </div>
 
                 <div className="w-5/12 sm:gap-4 flex justify-center items-center relative z-10">
                     <Link to="/search">
-                        <img src="../../../public/search.svg" alt="search" className='scale-[0.8]'/>
+                        <img src="/search.svg" alt="search" className='scale-[0.8]'/>
                     </Link>
                     <Link to="/favourite">
-                        <img src="../../../public/save.svg" alt="bookmark" className='scale-[0.5]'/>
+                        <img src="/save.svg" alt="bookmark" className='scale-[0.5]'/>
                     </Link>
                     {/* <Link to="/login">
-                    <img src="../../../public/profile.svg" alt="profile" className='scale-125' />
+                    <img src="/profile.svg" alt="profile" className='scale-125' />
                     </Link> */}
                     <button 
                         onClick={toggleDarkMode} 

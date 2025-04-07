@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import fb from '../../public/fb.svg'
-import insta from '../../public/insta.svg'
-import yt from '../../public/yt.svg'
-import copyright from '../../public/copyright.svg'
-import instaDark from '../../public/instaDark.svg'
-import ytDark from '../../public/ytDark.svg'
-import fbDark from '../../public/fbDark.svg'
+import fb from '/fb.svg'
+import insta from '/insta.svg'
+import yt from '/yt.svg'
+import copyright from '/copyright.svg'
+import instaDark from '/instaDark.svg'
+import ytDark from '/ytDark.svg'
+import fbDark from '/fbDark.svg'
 function PhoneFooter(){
     return (
         <div className='w-full flex dark:text-white text-black sm:hidden flex-col mt-16 absolute bottom-32'>

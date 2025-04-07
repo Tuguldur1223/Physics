@@ -2,9 +2,9 @@ import { useState } from 'react'
 import PhoneHeader from '../components/Header/phoneHeader'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
-import email from '../../public/email.svg'
-import call from '../../public/call.svg'
-import location from '../../public/location.svg'
+import email from '/email.svg'
+import call from '/call.svg'
+import location from '/location.svg'
 function HolbooBarih() {
 
   return (

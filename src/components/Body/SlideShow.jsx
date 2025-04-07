@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import Play from '../../../public/Play'
+import play from '/play.svg'
 const slides = [
   {
     id: 1,
     title: 'Robotek туршилтын үйл явц - Эмма Ундрах',
     content: '1 жилийн өмнө / 09:10',
-    imageUrl: '../../../public/Slide1.png', // Placeholder image
+    imageUrl: '/Slide1.png', // Placeholder image
   },
   {
     id: 2,
     title: 'Robotek туршилтын үйл явц - Сараа Батука',
     content: '1 жилийн өмнө / 10:20',
-    imageUrl: '../../../public/Slide2.png', // Placeholder image
+    imageUrl: '/Slide2.png', // Placeholder image
   },
   {
     id: 3,
     title: 'Robotek туршилтын үйл явц - Учрал Энэрэл',
     content: '1 жилийн өмнө / 11:30',
-    imageUrl: '../../../public/Slide3.png', // Placeholder image
+    imageUrl: '/Slide3.png', // Placeholder image
   },
   {
     id: 3,
     title: 'Robotek туршилтын үйл явц - Төгөлдөр Болор Сүбэдэй',
     content: '1 жилийн өмнө / 12:40',
-    imageUrl: '../../../public/Slide4.png', // Placeholder image
+    imageUrl: '/Slide4.png', // Placeholder image
   },
 ];
 
@@ -45,7 +45,7 @@ function SlideShow() {
             className="bg-[#5B93FF] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={prevSlide}
           >
-            <img src="../../../public/leftArrow.svg" alt="leftArrow" className='sm:scale-100 scale-75'/>
+            <img src="/leftArrow.svg" alt="leftArrow" className='sm:scale-100 scale-75'/>
         </button>
         <div className='w-10/12 sm:h-[500px] h-[200px] flex flex-col justify-end items-start p-5' style={{
             backgroundImage: `url("${slides[currentSlide].imageUrl}")`,
@@ -55,10 +55,10 @@ function SlideShow() {
         }}>
           <div className='flex sm:gap-6 gap-2 pb-2'>
             <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
-            <Play/>
+            <img src={play} alt="" />
             </button>
             <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
-            <img src="../../../public/bookmark.svg" alt="bookmark" className='scale-50 sm:scale-90'/>
+            <img src="/bookmark.svg" alt="bookmark" className='scale-50 sm:scale-90'/>
             </button>
           </div>
           <div className='p-2 rounded-xl  w-2/3'>
@@ -72,7 +72,7 @@ function SlideShow() {
             className="bg-[#5B93FF] rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center"
             onClick={nextSlide}
         >
-            <img src="../../../public/rightArrow.svg" alt="rightArrow" className='sm:scale-100 scale-75'/>
+            <img src="/rightArrow.svg" alt="rightArrow" className='sm:scale-100 scale-75'/>
         </button>
         
       </div>

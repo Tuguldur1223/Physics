@@ -4,8 +4,8 @@ import Header from '../components/Header/Header'
 import PhoneFooter from '../components/phoneFooter'
 import Footer from '../components/Footer'
 import PhoneHeader from '../components/Header/phoneHeader'
-import bookmarkStroke from '../../public/bookmarkStroke.svg'
-import bookmark from '../../public/bookmark.svg'
+import bookmarkStroke from '/bookmarkStroke.svg'
+import bookmark from '/bookmark.svg'
 
 function ExperimentTemplate({ experiments }) {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ function ExperimentTemplate({ experiments }) {
       <div className='w-10/12 mb-4 mt-10 flex flex-row justify-center items-center'> 
         <button onClick={() => navigate(-1)} className="w-2/12 flex items-center"> 
           <div className='w-10 h-10 rounded-full bg-[#5B93FF] flex items-center justify-center'>
-            <img src="../../../public/leftArrow.svg" alt="leftArrow"/>
+            <img src="/leftArrow.svg" alt="leftArrow"/>
           </div>
         </button> 
         <h2 className="text-3xl w-10/12 text-white font-bold">{experiment.title}</h2>

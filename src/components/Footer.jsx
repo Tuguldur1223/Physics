@@ -1,12 +1,13 @@
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import fb from '../../public/fb.svg'
-import insta from '../../public/insta.svg'
-import yt from '../../public/yt.svg'
-import copyright from '../../public/copyright.svg'
-import instaDark from '../../public/instaDark.svg'
-import ytDark from '../../public/ytDark.svg'
-import fbDark from '../../public/fbDark.svg'
+import fb from '/fb.svg'
+import insta from '/insta.svg'
+import yt from '/yt.svg'
+import copyright from '/copyright.svg'
+import instaDark from '/instaDark.svg'
+import ytDark from '/ytDark.svg'
+import fbDark from '/fbDark.svg'
+import logo from '/logo.png'
 
 
 function Footer(){
@@ -14,14 +15,12 @@ function Footer(){
         <div className='w-full dark:text-white text-black hidden sm:flex flex-col mt-16 absolute bottom-0'>
             <div className="flex flex-row justify-between px-16 border-t-2 border-gray-300 border-solid z-10 items-center w-full pt-4">
                 
-                <div className="w-2/12 flex justify-center items-center relative z-10">
-                    <Link to="/">
-                        <div className=' flex flex-col justify-center items-center'>
-                        <h1 className='text-3xl'>Amjilt</h1>
-                        <p className='text-[10px]'>Physics & Chemistry tests</p>
-                        </div>
-                    </Link>
-                </div>
+                <Link to="/" className="w-3/12 flex items-center justify-center z-10">
+                    <div className="w-full gap-2 flex relative flex-row justify-center items-center">
+                        <img src={logo} alt="logo" className='w-10' />
+                        <p className='font-bold text-lg'>Amjilt STEM</p>
+                    </div>
+                </Link> 
                 <div className="w-6/12 flex flex-row justify-between items-center  ">
                     <Link to="/aboutUs">
                     <button className="h-8 min-w-20 border-none rounded-3xl  font-medium flex justify-center items-center gap-1 p-2">Бидний тухай</button>

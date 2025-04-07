@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import home from '../../../public/home.svg';
-import physic from '../../../public/physic.svg';
-import chemistry from '../../../public/chemistry.svg';
-import market from '../../../public/market.svg';
-import homeActive from '../../../public/homeActive.svg';
-import physicActive from '../../../public/physicActive.svg';
-import chemistryActive from '../../../public/chemistryActive.svg';
-import marketActive from '../../../public/marketActive.svg';
-import search from '../../../public/search.svg';
-import searchActive from '../../../public/searchActive.svg'
+import home from '/home.svg';
+import physic from '/physic.svg';
+import chemistry from '/chemistry.svg';
+import market from '/market.svg';
+import homeActive from '/homeActive.svg';
+import physicActive from '/physicActive.svg';
+import chemistryActive from '/chemistryActive.svg';
+import marketActive from '/marketActive.svg';
+import search from '/search.svg';
+import searchActive from '/searchActive.svg'
 import { Link, useLocation } from 'react-router-dom';
 function NavBar() {
   const location = useLocation();
