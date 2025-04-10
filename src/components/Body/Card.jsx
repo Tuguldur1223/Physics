@@ -40,7 +40,7 @@ function Card(props) {
         <Link
             to={props.path}
         >
-          <img src={props.img} alt={props.title} className='rounded-lg' />
+          <img src={props.img} alt={props.title} className='rounded-lg w-full h-2/3' />
           <h3 className="text-xl font-bold mt-2">{props.title}</h3>
           <p className='text-lg font-semibold bottom-2 absolute'>Үнэ:{props.price}₮</p>
         </Link>

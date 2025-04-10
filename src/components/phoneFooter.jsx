@@ -4,6 +4,7 @@ import fb from '/fb.svg'
 import insta from '/insta.svg'
 import yt from '/yt.svg'
 import copyright from '/copyright.svg'
+import copyrightDark from '/copyrightDark.svg'
 import instaDark from '/instaDark.svg'
 import ytDark from '/ytDark.svg'
 import fbDark from '/fbDark.svg'
@@ -36,8 +37,9 @@ function PhoneFooter(){
 
             <div className='flex mt-4 text-[16px] flex-col px-10 gap-1'>
             <div className='flex flex-row items-center gap-1'>   
-            <img src={copyright} alt="copyright" className='scale-50 ' />
-            2025 Физикийн цагаан солиотнууд ХХК
+            <img src={copyright} alt="copyright" className='scale-50 dark:hidden block' />
+            <img src={copyrightDark} alt="copyright" className='scale-50 hidden dark:block' />
+            2025 Quarks
             </div>
             <div className='flex flex-row items-center gap-3 pl-2'>
             <div className='rounded-full w-2 h-2 bg-white'></div>

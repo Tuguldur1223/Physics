@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import sun from '/sun.svg'
 import moon from '/moon.svg'
 import logo from '/logo.png'
-
+import logoDark from '/logoDark.svg'
 function PhoneHeader({ darkMode, toggleDarkMode }) {
     return (
         <div className='w-full sticky h-16 flex sm:hidden bg-black dark:bg-[#101214] text-white top-0 left-0 z-50'>
@@ -11,8 +11,9 @@ function PhoneHeader({ darkMode, toggleDarkMode }) {
                 
                     <Link to="/" className="w-5/12 flex items-center justify-center z-10">
                         <div className="w-full gap-2 flex relative flex-row justify-center items-center">
-                            <img src={logo} alt="logo" className='w-12' />
-                            <p className='font-bold text-lg'>Amjilt STEM</p>
+                            {/* <img src={logo} alt="logo" className='w-12' />
+                            <p className='font-bold text-lg'>Amjilt STEM</p> */}
+                            <img src={logoDark} alt="logo" className='w-[45%] mt-1 -ml-6' />
                         </div>
                     </Link>
 

@@ -23,5 +23,5 @@
   @apply transition-colors duration-200;
   @apply transition-opacity duration-200;
   @apply transition-transform duration-200;
-  transition: background-image 3s ease;
+  transition: background-image 800ms ease;
 }

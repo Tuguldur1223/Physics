@@ -4,10 +4,13 @@ import fb from '/fb.svg'
 import insta from '/insta.svg'
 import yt from '/yt.svg'
 import copyright from '/copyright.svg'
+import copyrightDark from '/copyrightDark.svg'
 import instaDark from '/instaDark.svg'
 import ytDark from '/ytDark.svg'
 import fbDark from '/fbDark.svg'
 import logo from '/logo.png'
+import logoDark from '/logoDark.svg'
+import logoLight from '/logoLight.svg'
 
 
 function Footer(){
@@ -16,9 +19,11 @@ function Footer(){
             <div className="flex flex-row justify-between px-16 border-t-2 border-gray-300 border-solid z-10 items-center w-full pt-4">
                 
                 <Link to="/" className="w-3/12 flex items-center justify-center z-10">
-                    <div className="w-full gap-2 flex relative flex-row justify-center items-center">
-                        <img src={logo} alt="logo" className='w-10' />
-                        <p className='font-bold text-lg'>Amjilt STEM</p>
+                    <div className="w-full gap-2 flex flex-row justify-center items-center">
+                        {/* <img src={logo} alt="logo" className='w-10' />
+                        <p className='font-bold text-lg'>Amjilt STEM</p> */}
+                        <img src={logoDark} alt="logo" className='w-[45%] dark:block hidden -ml-20' />
+                        <img src={logoLight} alt="logo" className='w-[45%] block dark:hidden -ml-20' />
                     </div>
                 </Link> 
                 <div className="w-6/12 flex flex-row justify-between items-center  ">
@@ -34,9 +39,10 @@ function Footer(){
                 </div>
             </div>
             <div className='w-full px-16 py-6 flex flex-row justify-between items-center'>
-            <div className='flex  flex-row items-center gap-2'>
-            <img src={copyright} alt="copyright" className='scale-75 ' />
-            2025 Физикийн цагаан солиотнууд ХХК
+            <div className='flex  flex-row items-center gap-2'> 
+            <img src={copyright} alt="copyright" className='scale-75 dark:hidden block' />
+            <img src={copyrightDark} alt="copyright" className='scale-75 hidden dark:block' />
+            2025 Quarks
             <div className='rounded-full w-2 h-2 dark:bg-white bg-black'></div>
             Бүх эрх хуулиар хамгаалагдсан
             </div>

@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import sun from '/sun.svg'
 import moon from '/moon.svg'
 import logo from '/logo.png'
+import logoDark from '/logoDark.svg'
 
 function Header({ darkMode, toggleDarkMode }) {
     // Use the props passed from App.jsx instead of reading from localStorage
@@ -12,10 +13,11 @@ function Header({ darkMode, toggleDarkMode }) {
         <div className="w-full sticky text-white bg-black dark:bg-[#101214] rounded-b-xl h-16 hidden sm:flex z-50">
             <div className="flex flex-row justify-between items-center w-full h-full">
                 <Link to="/" className="w-3/12 flex items-center justify-center z-10">
-                    <div className="w-full gap-2 flex relative flex-row justify-center items-center">
+                    {/* <div className="w-full gap-2 flex relative flex-row justify-center items-center">
                         <img src={logo} alt="logo" className='w-12' />
                         <p className='font-bold text-lg'>Amjilt STEM</p>
-                    </div>
+                    </div> */}
+                    <img src={logoDark} alt="logo" className='w-[45%] mt-1' />
                 </Link>
                 <div className="flex flex-row w-8/12 gap-12 relative z-10">
                     <Link to="/">

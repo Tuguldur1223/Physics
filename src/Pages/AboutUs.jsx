@@ -18,11 +18,13 @@ function AboutUs() {
         <div className='sm:w-11/12 w-10/12 flex-wrap-reverse sm:mt-24 mt-10 flex sm:flex-row justify-center gap-10 sm:gap-40 items-center'>
           <div className='sm:w-1/3 flex flex-col justify-center items-center'>
             <h1 className='text-2xl w-full font-bold'>Who we are</h1>
-            <p className='text-lg font-semibold w-full mt-4'>Тухайн төсөл нь Амжилт Кибер сургуулийн 2025 оны 6-11
-            дүгээр ангийн сурагчдын зүгээс Физик, Химийн судлагдахууны хүрээнд зохион байгуулсан болно.</p>
+            {/* <p className='text-lg font-semibold w-full mt-4'>Тухайн төсөл нь Амжилт Кибер сургуулийн 2025 оны 6-11
+            дүгээр ангийн сурагчдын зүгээс Физик, Химийн судлагдахууны хүрээнд зохион байгуулсан болно.</p> */}
+            <p className='text-lg font-semibold w-full mt-4'>Quarks нь Амжилт Кибер сургуулийн 2025 оны 11-1
+            дүгээр ангийн Сарангэрэл болон Бат-Эрдэний зүгээс Физикийн судлагдахууны хүрээнд хөгжүүлсэн болно.</p>
           </div>
-          <div className='w-full sm:w-1/3 bg-slate-600 h-56 rounded-xl'>
-          <img src="" alt="" />
+          <div className='w-full sm:w-1/3 h-56 rounded-xl'>
+          <img src="/lol.png" alt="who" />
           </div>
         </div>
 
@@ -38,7 +40,7 @@ function AboutUs() {
           <div className='flex h-72 flex-col rounded-bl-3xl sm:rounded-bl-none sm:rounded-r-2xl justify-center items-center p-6 sm:p-12 w-10/12 sm:w-1/2 bg-gradient-to-bl from-[rgba(45,45,45,0.4)] via-[rgba(113,126,121,0.3)] to-[rgba(28,44,37,0.3)]'>
             <h1 className='w-full text-3xl font-semibold mb-4'>Зорилго & Зорилт</h1>
             <p className='w-full text-md'>
-            Сургуулиудад физик химийн лабораторийн хомсдолыг шийдвэрлэхийн тулд виртуал STEM туршилтууд, видео, интерактив агуулгыг
+            Сургуулиудад физик лабораторийн хомсдолыг шийдвэрлэхийн тулд виртуал STEM туршилтууд, видео, интерактив агуулгыг
             санаачлан сурагчдын сонирхлыг төрүүлж, STEM салбарт ирээдүйн шинэ санаачлагчдыг бэлтгэх зорилготой.</p>
           </div>
         </div>
@@ -46,7 +48,7 @@ function AboutUs() {
 
 
 
-        <div className='w-full flex flex-col justify-center items-center mb-16'>
+        {/* <div className='w-full flex flex-col justify-center items-center mb-16'>
           <h1 className='text-3xl font-bold mt-20 '>Манай баг</h1>
           <div className='w-full flex sm:flex-row flex-col items-center justify-center '>
             <div className='sm:w-1/2 sm:h-80 sm:h-auto flex flex-col items-center'>
@@ -82,8 +84,19 @@ function AboutUs() {
               </div>
             </div>
           </div>
+        </div> */}
+        <div className='w-full flex flex-col justify-center items-center mb-16'>
+          <h1 className='text-3xl font-bold mt-20 '>Манай баг</h1>
+          <div className='w-full flex sm:flex-row flex-col items-center justify-center '>
+            <div className='sm:w-1/2 sm:h-auto  flex flex-col items-center'>
+              <h1 className='text-xl font-semibold p-4 text-center'>MANAGEMENT  &  DEVELOPMENT</h1>
+              <div className='flex w-full gap-2'>
+                <h1 className='text-md font-semibold w-1/2 text-end'>Санаачлагч</h1>
+                <h1 className='text-md font-light w-1/2'>Б. Бат-Эрдэнэ <br /> Л. Сарангэрэл</h1>
+              </div>
+            </div>
+          </div>
         </div>
-        
 
         <PhoneFooter/>
         <Footer/><PhoneFooter/>

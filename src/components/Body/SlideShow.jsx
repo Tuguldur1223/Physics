@@ -3,27 +3,21 @@ import play from '/play.svg'
 const slides = [
   {
     id: 1,
-    title: 'Robotek туршилтын үйл явц - Эмма Ундрах',
-    content: '1 жилийн өмнө / 09:10',
-    imageUrl: '/Slide1.png', // Placeholder image
+    title: 'Бүхий л туршилтуудыг Quarks-аас...',
+    content: '1 сарын өмнө / 09:10',
+    imageUrl: '/slide2.png', // Placeholder image
   },
   {
     id: 2,
-    title: 'Robotek туршилтын үйл явц - Сараа Батука',
-    content: '1 жилийн өмнө / 10:20',
-    imageUrl: '/Slide2.png', // Placeholder image
+    title: 'Шинжлэх ухааны гайхамшгийг мэдэрцгээе',
+    content: '14 хоногийн өмнө / 10:20',
+    imageUrl: '/slide1.png', // Placeholder image
   },
   {
     id: 3,
-    title: 'Robotek туршилтын үйл явц - Учрал Энэрэл',
-    content: '1 жилийн өмнө / 11:30',
-    imageUrl: '/Slide3.png', // Placeholder image
-  },
-  {
-    id: 3,
-    title: 'Robotek туршилтын үйл явц - Төгөлдөр Болор Сүбэдэй',
-    content: '1 жилийн өмнө / 12:40',
-    imageUrl: '/Slide4.png', // Placeholder image
+    title: 'Технологийн дэвшлийг Шинжлэх ухаанаас',
+    content: 'Өчигдөр / 11:30',
+    imageUrl: '/slide3.png', // Placeholder image
   },
 ];
 
@@ -55,7 +49,7 @@ function SlideShow() {
         }}>
           <div className='flex sm:gap-6 gap-2 pb-2'>
             <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
-            <img src={play} alt="" />
+            <img src={play} alt="play" className='sm:scale-100 scale-50' />
             </button>
             <button className='bg-black rounded-full sm:w-10 sm:h-10 w-5 h-5 flex justify-center items-center'>
             <img src="/bookmark.svg" alt="bookmark" className='scale-50 sm:scale-90'/>
