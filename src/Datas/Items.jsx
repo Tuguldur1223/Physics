@@ -1,4 +1,114 @@
 export const items = [
+  {
+    "id": 11,
+    "name": "Frog",
+    "title": "DIY robot Game ",
+    "subject": "Physics",
+    "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
+    "img":"https://i.pinimg.com/736x/a9/93/c7/a993c7b6ff3abe62bdedf42fc8b9eda9.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+      "Кардон цаас",
+      "Зайрмагны иш",
+      "DC хөдөлгүүр",
+      "Будаг",
+      "Утас",
+      "Хиймэл нүд",
+      "battery 12v"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Nigger",
+    "title": "DIY robot Game",
+    "subject": "Physics",
+    "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
+    "img":"https://i.pinimg.com/736x/f5/a6/26/f5a62625314fdc73187a456bf9b77d64.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+      "DC хөдөлгүүр",
+      "Зайрмагны иш",
+      "Жижиг гэрэл",
+      "Battery 12v",
+      "Утас",
+      
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Robot",
+    "title": "DIY robot Game",
+    "subject": "Physics",
+    "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
+    "img":"https://i.pinimg.com/736x/1d/26/ca/1d26ca809397b56d63f662d8543a8696.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+     "Модон баримал",
+      "DC хөдөлгүүр",
+      "Зайрмагны иш",
+      "Servo мотор",
+      "Battery 12v",
+      "Утас",
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Buzz Wired Game",
+    "title": "DIY robot Game",
+    "subject": "Physics",
+    "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
+    "img":"https://i.pinimg.com/736x/04/cd/2a/04cd2a315c1ad38a8eab8800b6c29729.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+      "Цавуу буу",
+      "Нарийн Төмөр",
+      "Дууны чанга яригч",
+      "Утас",
+      "Battery 12v",
+      "Конооп",
+      "Хайч",
+      "Кардон",
+      "Зайрмагны иш",
+      "Хулсан саваа",
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mdku",
+    "title": "DIY robot Game",
+    "subject": "Physics",
+    "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
+    "img":"https://i.pinimg.com/736x/c8/24/86/c82486566aea3329be435cbff7f02609.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+     "Модон баримал",
+      "DC хөдөлгүүр",
+      "Battery 12v",
+      "Кардон",
+      "Хиймэл нүд",
+      "Утас",
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Laa",
+    "title": "Цэцгийн гэрэл",
+    "subject": "Physics",
+    "description": "Химийн хичээлээ бодит амьдрал хэрэглэх чадвар суралцах-Лаа.",
+    "img":"https://i.pinimg.com/736x/d6/cf/14/d6cf147679f87ab56e4f994224a96daf.jpg" ,
+    "price": "₮17,500",
+    "materials": [
+      "Лааны гол",
+      "Лаа хийх сав буюу хэв ",
+      "Будагч бодис",
+      "Шар буурцагны  вакс - Парапин тос  байж болно ",
+      "Шар буурцагны бакс хайлуулах хэрэгсэл - халбага, савх",
+      "Үнэртүүлэгч ба чимэглэл",
+      "Нэг удаагийн аяга",
+
+    ]
+  },
+
     {
       "id": 1,
       "name": "Periscope Kit",
@@ -131,6 +241,8 @@ export const items = [
         "Цаг",
         "Өндөр хэмжээтэй шал"
       ]
-    }
+    },
+
+
 
 ]
