@@ -22,14 +22,14 @@ function Surtchilgaa() {
                     <img src={call} alt="call" />
                 </div>
                 <h1 className='font-semibold text-lg w-40 sm:w-auto'>Цахим хаяг</h1>
-                <p>loremipsum@gmail.com</p>
+                <p>davaanyam2922@gmail.com</p>
             </div>
             <div>
             <div className='w-14 h-14 rounded-xl bg-[#5B93FF] flex justify-center items-center'>
                 <img src={email} alt="email" />
             </div>
                 <h1 className='font-semibold text-lg w-40 sm:w-auto'>Утас</h1>
-                <p>+976 XXXX-XXXX</p>
+                <p>+976 88637861    </p>
             </div>
             <div className='font-semibold sm:font-normal text-lg'>
                 <p>Цахим хаяг болон утсаар холбогдож <br /> сурталчилгаа байршуулна уу.</p>

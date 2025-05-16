@@ -3,21 +3,21 @@ import play from '/play.svg'
 const slides = [
   {
     id: 1,
-    title: 'Бүхий л туршилтуудыг Quarks-аас...',
+    title: 'Бүхий л туршилтуудыг Amjilt STEM-ээс...',
     content: '1 сарын өмнө / 09:10',
-    imageUrl: '/slide2.png', // Placeholder image
+    imageUrl: 'https://i.pinimg.com/736x/56/4c/52/564c52caec2a8dccf50e9d6a1503e721.jpg', // Placeholder image
   },
   {
     id: 2,
     title: 'Шинжлэх ухааны гайхамшгийг мэдэрцгээе',
     content: '14 хоногийн өмнө / 10:20',
-    imageUrl: '/slide1.png', // Placeholder image
+    imageUrl: 'https://i.pinimg.com/736x/b9/39/17/b939172de2cc9365b10461143eaa7bd1.jpg', // Placeholder image
   },
   {
     id: 3,
     title: 'Технологийн дэвшлийг Шинжлэх ухаанаас',
     content: 'Өчигдөр / 11:30',
-    imageUrl: '/slide3.png', // Placeholder image
+    imageUrl: 'https://i.pinimg.com/736x/47/f4/89/47f489501af5789db3cd0ce31a803654.jpg', // Placeholder image
   },
 ];
 

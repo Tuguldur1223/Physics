@@ -18,13 +18,12 @@ function AboutUs() {
         <div className='sm:w-11/12 w-10/12 flex-wrap-reverse sm:mt-24 mt-10 flex sm:flex-row justify-center gap-10 sm:gap-40 items-center'>
           <div className='sm:w-1/3 flex flex-col justify-center items-center'>
             <h1 className='text-2xl w-full font-bold'>Who we are</h1>
-            {/* <p className='text-lg font-semibold w-full mt-4'>Тухайн төсөл нь Амжилт Кибер сургуулийн 2025 оны 6-11
-            дүгээр ангийн сурагчдын зүгээс Физик, Химийн судлагдахууны хүрээнд зохион байгуулсан болно.</p> */}
-            <p className='text-lg font-semibold w-full mt-4'>Quarks нь Амжилт Кибер сургуулийн 2025 оны 11-1
-            дүгээр ангийн Сарангэрэл болон Бат-Эрдэний зүгээс Физикийн судлагдахууны хүрээнд хөгжүүлсэн болно.</p>
+             <p className='text-lg font-semibold w-full mt-4'>Тухайн төсөл нь Амжилт Кибер сургуулийн 2025 оны 6-11
+            дүгээр ангийн сурагчдын зүгээс Физик, Химийн судлагдахууны хүрээнд зохион байгуулсан болно.</p>
+          
           </div>
-          <div className='w-full sm:w-1/3 h-56 rounded-xl'>
-          <img src="/lol.png" alt="who" />
+          <div className='w-full sm:w-1/3 h-72 rounded-xl'>
+          <img src="https://i.pinimg.com/736x/f7/a3/99/f7a399e2dad99d36e3a8a72cab37b19b.jpg" alt="" className='h-full w-full object-cover scale-75' />
           </div>
         </div>
 
@@ -48,7 +47,7 @@ function AboutUs() {
 
 
 
-        {/* <div className='w-full flex flex-col justify-center items-center mb-16'>
+        <div className='w-full flex flex-col justify-center items-center mb-16'>
           <h1 className='text-3xl font-bold mt-20 '>Манай баг</h1>
           <div className='w-full flex sm:flex-row flex-col items-center justify-center '>
             <div className='sm:w-1/2 sm:h-80 sm:h-auto flex flex-col items-center'>
@@ -71,7 +70,8 @@ function AboutUs() {
               <h1 className='text-xl font-semibold p-8'>DEVELOPMENT TEAM</h1>
               <div className='flex w-full gap-2'>
                 <h1 className='text-md font-semibold w-1/2 text-end'>Frontend хөгжүүлэгч</h1>
-                <h1 className='text-md font-light'>Б. Бат-Эрдэнэ</h1>
+                <h1 className='text-md font-light'>Б. Бат-Эрдэнэ <br/> М. Гантулга</h1>
+                
               </div>
               <div className='flex w-full gap-2'>
                 <h1 className='text-md font-semibold w-1/2 text-end'>Backend хөгжүүлэгч</h1>
@@ -84,20 +84,8 @@ function AboutUs() {
               </div>
             </div>
           </div>
-        </div> */}
-        <div className='w-full flex flex-col justify-center items-center mb-16'>
-          <h1 className='text-3xl font-bold mt-20 '>Манай баг</h1>
-          <div className='w-full flex sm:flex-row flex-col items-center justify-center '>
-            <div className='sm:w-1/2 sm:h-auto  flex flex-col items-center'>
-              <h1 className='text-xl font-semibold p-4 text-center'>MANAGEMENT  &  DEVELOPMENT</h1>
-              <div className='flex w-full gap-2'>
-                <h1 className='text-md font-semibold w-1/2 text-end'>Санаачлагч</h1>
-                <h1 className='text-md font-light w-1/2'>Б. Бат-Эрдэнэ <br /> Л. Сарангэрэл</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        </div> 
+        
         <PhoneFooter/>
         <Footer/><PhoneFooter/>
       </div>

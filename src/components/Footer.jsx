@@ -9,8 +9,7 @@ import instaDark from '/instaDark.svg'
 import ytDark from '/ytDark.svg'
 import fbDark from '/fbDark.svg'
 import logo from '/logo.png'
-import logoDark from '/logoDark.svg'
-import logoLight from '/logoLight.svg'
+
 
 
 function Footer(){
@@ -20,10 +19,11 @@ function Footer(){
                 
                 <Link to="/" className="w-3/12 flex items-center justify-center z-10">
                     <div className="w-full gap-2 flex flex-row justify-center items-center">
-                        {/* <img src={logo} alt="logo" className='w-10' />
-                        <p className='font-bold text-lg'>Amjilt STEM</p> */}
-                        <img src={logoDark} alt="logo" className='w-[45%] dark:block hidden -ml-20' />
-                        <img src={logoLight} alt="logo" className='w-[45%] block dark:hidden -ml-20' />
+                        <div className='bg-black px-3 py-2 rounded-full'>
+                         <img src={logo} alt="logo" className='w-10' />
+                        </div>
+                        <p className='font-bold text-lg'>Amjilt STEM</p>
+
                     </div>
                 </Link> 
                 <div className="w-6/12 flex flex-row justify-between items-center  ">
@@ -42,7 +42,7 @@ function Footer(){
             <div className='flex  flex-row items-center gap-2'> 
             <img src={copyright} alt="copyright" className='scale-75 dark:hidden block' />
             <img src={copyrightDark} alt="copyright" className='scale-75 hidden dark:block' />
-            2025 Quarks
+            2025 Amilt STEM
             <div className='rounded-full w-2 h-2 dark:bg-white bg-black'></div>
             Бүх эрх хуулиар хамгаалагдсан
             </div>

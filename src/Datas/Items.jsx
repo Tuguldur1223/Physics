@@ -6,7 +6,7 @@ export const items = [
     "subject": "Physics",
     "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
     "img":"https://i.pinimg.com/736x/a9/93/c7/a993c7b6ff3abe62bdedf42fc8b9eda9.jpg" ,
-    "price": "₮17,500",
+    "price": "₮9,500",
     "materials": [
       "Кардон цаас",
       "Зайрмагны иш",
@@ -19,12 +19,12 @@ export const items = [
   },
   {
     "id": 12,
-    "name": "Nigger",
+    "name": "Robotv2",
     "title": "DIY robot Game",
     "subject": "Physics",
     "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
     "img":"https://i.pinimg.com/736x/f5/a6/26/f5a62625314fdc73187a456bf9b77d64.jpg" ,
-    "price": "₮17,500",
+    "price": "₮9,500",
     "materials": [
       "DC хөдөлгүүр",
       "Зайрмагны иш",
@@ -41,7 +41,7 @@ export const items = [
     "subject": "Physics",
     "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
     "img":"https://i.pinimg.com/736x/1d/26/ca/1d26ca809397b56d63f662d8543a8696.jpg" ,
-    "price": "₮17,500",
+    "price": "₮9,500",
     "materials": [
      "Модон баримал",
       "DC хөдөлгүүр",
@@ -58,7 +58,7 @@ export const items = [
     "subject": "Physics",
     "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
     "img":"https://i.pinimg.com/736x/04/cd/2a/04cd2a315c1ad38a8eab8800b6c29729.jpg" ,
-    "price": "₮17,500",
+    "price": "₮9,500",
     "materials": [
       "Цавуу буу",
       "Нарийн Төмөр",
@@ -79,7 +79,7 @@ export const items = [
     "subject": "Physics",
     "description": "Сурагчдын шинжлэх ухааны мэдлэг сонирхолтой тоглоомын аргаар олгох.",
     "img":"https://i.pinimg.com/736x/c8/24/86/c82486566aea3329be435cbff7f02609.jpg" ,
-    "price": "₮17,500",
+    "price": "₮9,500",
     "materials": [
      "Модон баримал",
       "DC хөдөлгүүр",
@@ -242,6 +242,107 @@ export const items = [
         "Өндөр хэмжээтэй шал"
       ]
     },
+     {
+      "id": 17,
+      "name": "Гарын саван",
+      "title": "Гарын саван",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/96/d2/72/96d272d1e5ad95f10076fff55a3ac7e8.jpg",
+      "price": "₮12,990",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ванны бөмбөлөг",
+      "title": "Ванны бөмбөлөг",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/8f/91/da/8f91dadb5020ed77062f9bc7531da87e.jpg",
+      "price": "₮14,900",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Далайн үнэртэй лаа",
+      "title": "Далайн үнэртэй лаа",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/14/e5/2f/14e52f80d9dea71a79ef05756d99d2df.jpg",
+      "price": "₮15,500",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Ургамалын үнэртэй лаа",
+      "title": "Ургамалын үнэртэй лаа",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/5b/c8/8d/5bc88d99dc9ece7a9f9098aff864c61a.jpg",
+      "price": "₮15,500",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Үнэр дарагч лаа",
+      "title": "Үнэр дарагч лаа",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/f5/4f/95/f54f95f343ef3184f8e23048e7383cd8.jpg",
+      "price": "₮15,500",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Лаа цэцэгний үнэртэй",
+      "title": "Лаа цэцэгний үнэртэй",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/49/7f/7d/497f7d82e84d18522db1f4a81d63c350.jpg",
+      "price": "₮8,900",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+
+     {
+      "id": 23,
+      "name": "Физик хөзөр",
+      "title": "Физик хөзөр",
+      "subject": "Physics",
+      "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
+      "img": "https://i.pinimg.com/736x/cd/6f/ad/cd6fade1d58d3595a06205873848c483.jpg",
+      "price": "₮12,900",
+      "materials": [
+        "Цахилгаан утас",
+        "Цахилгаан тэжээл",
+        "Гэрлийн ламп"
+      ]
+    },
+
+ 
 
 
 

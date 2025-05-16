@@ -25,10 +25,10 @@ export const experiments = [
     {
       "id": 2,
       "name": "Pendulum",
-      "title": "Яндан",
+      "title": "дүүжин долгион",
       "subject": "Physics",
       "grade": 6,
-      "description": "Яндангийн хөдөлгөөнтэй танилцах.",
+      "description": "дүүжин долгионтой танилцах.",
       "videoSrc": "https://www.youtube.com/embed/_8JMVl-_KKs?si=qcPrsWdYlHPt3OEC",
       "materials": [
         "Тунгалаг шил",

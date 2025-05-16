@@ -29,14 +29,14 @@ function HolbooBarih() {
                     <img src={call} alt="call" />
                 </div>
                 <h1 className='font-semibold text-lg'>Цахим хаяг</h1>
-                <p>loremipsum@gmail.com</p>
+                <p>davaanyam2922@gmail.com</p>
             </div>
             <div className='sm:h-60 w-64 sm:w-auto'>
                 <div className='w-14 h-14 rounded-xl bg-[#5B93FF] flex justify-center items-center'>
                     <img src={email} alt="email" />
                 </div>
                 <h1 className='font-semibold text-lg'>Утас</h1>
-                <p>+976 XXXX-XXXX</p>
+                <p>+976 88637861</p>
             </div>
             
         </div>

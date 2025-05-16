@@ -39,7 +39,7 @@ function PhoneFooter(){
             <div className='flex flex-row items-center gap-1'>   
             <img src={copyright} alt="copyright" className='scale-50 dark:hidden block' />
             <img src={copyrightDark} alt="copyright" className='scale-50 hidden dark:block' />
-            2025 Quarks
+            2025 Amjilt STEM
             </div>
             <div className='flex flex-row items-center gap-3 pl-2'>
             <div className='rounded-full w-2 h-2 bg-white'></div>
