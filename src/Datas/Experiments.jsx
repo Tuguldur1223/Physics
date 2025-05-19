@@ -66,10 +66,10 @@ export const experiments = [
     {
       "id": 4,
       "name": "Electric Circuit",
-      "title": "Цахилгаан гольдрол",
+      "title": "Цахилгаан хэлхээ",
       "subject": "Physics",
       "grade": 7,
-      "description": "Цахилгаан гольдролын үндсийг ойлгох.",
+      "description": "Цахилгаан хэлхээ үндсийг ойлгох.",
       "videoSrc": "https://www.youtube.com/embed/BVUogksj398?si=htl3K7i3QBYOk-hk",
       "materials": [
         "Цахилгаан утас",
@@ -77,7 +77,7 @@ export const experiments = [
         "Гэрлийн ламп"
       ],
       "steps": [
-        "Цахилгаан гольдролын схем үүсгэх.",
+        "ын схем үүсгэх.",
         "Цахилгаан тэжээлээс гэрлийн ламп руу утсаар гүйдэл явуулж үзэх.",
         "Гэрлийн гүйдлийн өөрчлөлтийг тэмдэглэх."
       ]
@@ -164,7 +164,7 @@ export const experiments = [
     {
       "id": 9,
       "name": "Friction and Motion",
-      "title": "Төрөл бүрийн гадаргуу дээрх үймэл хөдөлгөөн",
+      "title": "Жигд хувьсах хөдөлгөөн",
       "subject": "Physics",
       "grade": 10,
       "description": "Гадаргуугийн үрэлтийг судлах.",
@@ -183,10 +183,10 @@ export const experiments = [
     {
       "id": 10,
       "name": "Projectile Motion",
-      "title": "Хүчтэй хөдөлгөөний хөдөлгөөн",
+      "title": "Өнцөг үүсгэн шидсэн биеийн хөдөлгөөн",
       "subject": "Physics",
       "grade": 10,
-      "description": "Хүчтэй хөдөлгөөний хөдөлгөөнтэй танилцах.",
+      "description": "Өнцөг үүсгэн шидсэн биеийн хөдөлгөөнx танилцах.",
       "videoSrc": "https://www.youtube.com/embed/2gW6-0G-3AA?si=GQSy_pR5OadG9OoH",
       "materials": [
         "Төсөөллөөр хийгдсэн бөмбөг",
@@ -201,21 +201,24 @@ export const experiments = [
     },
     {
       "id": 11,
-      "name": "Magnetic Attraction",
-      "title": "Магнитын татах хүч",
+      "name": "Arduino",
+      "title": "Arduino robot кодчилол",
       "subject": "Physics",
       "grade": 11,
-      "description": "Магнитын татах хүчтэй холбоотой туршилт хийх.",
-      "videoSrc": "https://www.youtube.com/embed/c5QoiRkQT4c?si=pwaSjcHDa3h1CJ1D",
+      "description": "Arduino холбоотой туршилт хийх.",
+      "videoSrc": "https://www.youtube.com/embed/z524YqJvyak?si=bz_IuB-Hb5L9yil0",
       "materials": [
-        "Магнит",
-        "Ган төмөр",
-        "Цахилгаан дамжуулагч"
+        "2WD smart car kit",
+        "Arduino Nano board",
+        "HC-05 Bluetooth module",
+        "L298N motor driver",
+        "AA x 6 Battery holder",
+        "AA battery",
       ],
       "steps": [
-        "Магнит болон металлын зүйлсийн татах хүчийг шалгах.",
-        "Магнитын орон хэрхэн өөрчлөгдөхийг ажиглах.",
-        "Татах хүчний хэмжээг тэмдэглэх."
+        "Холболтуудаа зааврын дагуу холбоно.",
+        "Arduino IDE татаж заасан кодыг шарж тавина.",
+        "Bluetooth control татаж утастайгаа холбоно."
       ]
     },
     {
