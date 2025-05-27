@@ -39,17 +39,17 @@ export const experiments = [
       "steps": [
         "Шилэн утсыг хэрэглэн яндан хийх.",
         "Утасны төгсгөлд жинтэй зүйлсийг бэхлэх.",
-        "Яндангийн гүйлтэд хичээлтэй цаг тоолох.",
+        "дангийн гүйлтэд хичээлтэй цаг тоолох.",
         "Өөр өөр урттай утсаар туршиж, хугацааг хэмжих."
       ]
     },
     {
       "id": 3,
       "name": "Magnetic Field",
-      "title": "Магнит орон",
+      "title": "Соронзон орон",
       "subject": "Physics",
       "grade": 7,
-      "description": "Магнит орон болон түүний үйлчлэлийг судлах.",
+      "description": "Соронзон орон болон түүний үйлчлэлийг судлах.",
       "videoSrc": "https://www.youtube.com/embed/1Nr-KtlMIKI?si=j5h5g9639CbzrrHN",
       "materials": [
         "Магнит",
@@ -58,9 +58,9 @@ export const experiments = [
         "Металлын зүйлс"
       ],
       "steps": [
-        "Магнит болон металлын зүйлсийн харилцан үйлчлэлийг судална.",
-        "Магнитын оронд гар утас ашиглаж, тархалт ямар байгааг ажиглах.",
-        "Магнитын хүчийг хэмжих."
+        "Соронзон болон металлын зүйлсийн харилцан үйлчлэлийг судална.",
+        "Соронзон оронд гар утас ашиглаж, тархалт ямар байгааг ажиглах.",
+        "Соронзон хүчийг хэмжих."
       ]
     },
     {
@@ -239,6 +239,159 @@ export const experiments = [
         "Халаалт хэрхэн тархаж байгаа үзэх.",
         "Металл эд ангийн тусламжтайгаар дулаан дамжуулах."
       ]
-    }
+    },
+    
+
+{
+"id": 13,
+      "name": "Togtmol guidel",
+      "title": "Тогтмол гүйдэл",
+      "subject": "Physics",
+      "grade": 8,
+      "description": "Цахилгаан хэлхээний холболтыг судлах.",
+      "videoSrc": "https://www.youtube.com/embed/P5dw1abNQ5k?si=sE4p3sHgOQSkZTDx",
+      "materials": [
+        "Чийдэн",
+        "battery",
+        "Цахилгаан утас"
+      ],
+      "steps": [
+        "Цахилгаан утасаа холбоно.",
+        "battery, чийдэнгээ холбоно.",
+        
+      ]
+    
+},
+{
+  "id": 14,
+  "name": "biyiin nygt",
+  "title": "Биеийн нягт",
+  "subject": "Physics",
+  "grade": 7,
+  "description": "Биеийн нягтыг олж сурах.",
+  "videoSrc": "https://www.youtube.com/embed/hCJKwHLeGRQ?si=LC7yO4Z7kIrfmU2M",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+{
+  "id": 15,
+  "name": "Ternodinamic",
+  "title": "Термодинамик Хийн хуулиуд",
+  "subject": "Physics",
+  "grade": 11,
+  "description": "Термодинамик Хийн хуулиуд судлах.",
+  "videoSrc": "https://www.youtube.com/embed/YhkzEZm--zQ",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+
+{
+  "id": 16,
+  "name": "OUSHB",
+  "title": "Өнцөг үүсгэн шидсэн бие",
+  "subject": "Physics",
+  "grade": 10,
+  "description": "Өнцөг үүсгэн шидсэн биеийг олох.",
+  "videoSrc": "https://www.youtube.com/embed/Gsa6X01Kduo?si=m0usmtLl1Bd4ohwN",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+{
+  "id": 17,
+  "name": "Toli",
+  "title": "Толь",
+  "subject": "Physics",
+  "grade": 9,
+  "videoSrc": "https://www.youtube.com/embed/qYBHf4GZ5oQ?si=rBCxz5tbNmlOpnyu",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+{
+  "id": 18,
+  "name": "Linz",
+  "title": "Линз - Хүний нүд",
+  "subject": "Physics",
+  "grade": 9,
+  "videoSrc": "https://www.youtube.com/embed/e0d3-wX8cwM?si=g_cMKa8GDeF3-t_g",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+{
+  "id": 19,
+  "name": "Huvisagch",
+  "title": "Хувьсагч олох",
+  "subject": "Physics",
+  "grade": 6,
+  "videoSrc": "https://www.youtube.com/embed/UnSf3_fEc_s?si=c5pNPHc6bAyXVVnw",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+ {
+  "id": 20,
+  "name": "DuuAvia",
+  "title": "Дуу авиа",
+  "subject": "Physics",
+  "grade": 6,
+  "videoSrc": "https://www.youtube.com/embed/urNwlDMqbM8?si=jCyMvux4W1HO6CbV",
+  "materials": [
+        "Дэвтэр",
+        "Бал",
+        
+      ],
+      "steps": [
+        "Багшийн заасныг суралцах.",
+       
+        
+      ]
+},
+
 ];
 

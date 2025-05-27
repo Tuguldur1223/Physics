@@ -5,7 +5,7 @@ const slides = [
     id: 1,
     title: 'Бүхий л туршилтуудыг Amjilt STEM-ээс...',
     content: '1 сарын өмнө / 09:10',
-    imageUrl: 'https://i.pinimg.com/736x/56/4c/52/564c52caec2a8dccf50e9d6a1503e721.jpg', // Placeholder image
+    imageUrl: 'https://i.pinimg.com/736x/16/9a/81/169a8148f017d2097d6ab08236218437.jpg', // Placeholder image
   },
   {
     id: 2,

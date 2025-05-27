@@ -143,9 +143,9 @@ export const items = [
     {
       "id": 3,
       "name": "Magnetic Field Kit",
-      "title": "Магнит орон",
+      "title": "Соронзон орон",
       "subject": "Physics",
-      "description": "Магнит орон болон түүний нөлөөллийг судлах туршилтын хэрэгсэл.",
+      "description": "Соронзон орон болон түүний нөлөөллийг судлах туршилтын хэрэгсэл.",
       "img": "https://m.media-amazon.com/images/I/61piTTVfreL.jpg",
       "price": "₮15,490",
       "materials": [
@@ -155,21 +155,7 @@ export const items = [
         "Металлын зүйлс"
       ]
     },
-    {
-      "id": 4,
-      "name": "Solar System Model Kit",
-      "title": "Нарны аймаг",
-      "subject": "Physics",
-      "description": "Нарны аймгийн загварыг бүтээж, бидний орчлон ертөнцийн бүтцийн талаар суралцана.",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdV7OFcbw_Y2-PpX2O6FdmZX0PWsoYho2IpQ&s",
-      "price": "₮19,990",
-      "materials": [
-        "Моделийн бөмбөлгүүд",
-        "Цаас",
-        "Хайч",
-        "Цавуу"
-      ]
-    },
+
     {
       "id": 6,
       "name": "Electric Motor Kit",
@@ -228,20 +214,7 @@ export const items = [
         "Гэрлийн ламп"
       ]
     },
-    {
-      "id": 10,
-      "name": "Projectile Motion Kit",
-      "title": "Хөдөлгөөний хөдөлгөөн",
-      "subject": "Physics",
-      "description": "Хүчтэй хөдөлгөөний хөдөлгөөний тухай судлах болон хэмжилт хийх.",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB0s5Eu-a5IRe1t8LPpI8l_MnLBQzM8Rspcg&s",
-      "price": "₮17,500",
-      "materials": [
-        "Төсөөллөөр хийгдсэн бөмбөг",
-        "Цаг",
-        "Өндөр хэмжээтэй шал"
-      ]
-    },
+   
      {
       "id": 17,
       "name": "Гарын саван",
@@ -352,7 +325,7 @@ export const items = [
       "subject": "Physics",
       "description": "Э цахилгаан гольдрог бүтээж, цахилгаан энергийг судлах.",
       "img": "https://i.pinimg.com/736x/cd/6f/ad/cd6fade1d58d3595a06205873848c483.jpg",
-      "price": "₮12,900",
+      "price": "₮15,000",
       "materials": [
         "Цахилгаан утас",
         "Цахилгаан тэжээл",
@@ -360,7 +333,67 @@ export const items = [
       ]
     },
 
- 
+      {
+      "id": 24,
+      "name": "Arduinov2",
+      "title": "Arduino bluethoot control robot",
+      "subject": "Physics",
+      "description": "Arduino bluetooth-ийн удирдлагатай робот.",
+      "img": "https://i.pinimg.com/736x/e8/46/7b/e8467b006aa148f3b631ba9dbe47aee1.jpg",
+      "price": "₮60,000",
+      "materials": [
+        "DC motor 4x",
+        "HC-05 1x",
+        "L-298 1x",
+        "UNO 1x",
+        "battery 2x",
+        "Jumpwire",
+      ]
+    },
+
+     {
+      "id": 25,
+      "name": "Arduino3",
+      "title": "Arduino human following robot",
+      "subject": "Physics",
+      "description": "Arduino human following robot.",
+      "img": "https://i.pinimg.com/736x/19/12/39/191239935a21356f145491f4c418c867.jpg",
+      "price": "₮60,000",
+      "materials": [
+        "DC motor 4x",
+        "ultrasonic sensor 1x",
+        "L-298 1x",
+        "UNO 1x",
+        "battery 2x",
+        "Jumpwire",
+        "servomotor 1x",
+        "IR sensor 2x",
+      ]
+    },
+{
+      "id": 26,
+      "name": "DC motor",
+      "title": "DC motor",
+      "subject": "Physics",
+      "description": "DC Motor.",
+      "img": "https://i.pinimg.com/736x/50/c1/56/50c1562903d0dbe13515e5c34bb69f3c.jpg",
+      "price": "₮5,000",
+      "materials": [
+        "DC motor",
+      ]
+    },
+{
+      "id": 27,
+      "name": "L298n",
+      "title": "L298n",
+      "subject": "Physics",
+      "description": "L298n .",
+      "img": "https://i.pinimg.com/736x/50/be/68/50be68cebc6a883a966de7d00ca139c9.jpg",
+      "price": "₮10,000",
+      "materials": [
+        "L298n",
+      ]
+    },
 
 
 
